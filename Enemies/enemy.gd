@@ -39,9 +39,8 @@ func _on_navigation_agent_3d_target_reached():
 
 func _on_hitbox_body_entered(body):
 		if body.is_in_group("player"):
-			var damage = 25 - body.defense
-			print("player took", damage, "!")
-			body.health -= damage
+			print("player hit")
+			body.health -= 10
 			enemies_damaged.append(body)
 			print(enemies_damaged)
 

@@ -1,6 +1,4 @@
-res://Menu/equipment_menu.tscn
-res://Enemies/enemy.gd
 res://world.tscn
-res://Enemies/enemy.tscn
+res://Enemies/enemy.gd
 res://Player/player.tscn
 res://Player/player.gd

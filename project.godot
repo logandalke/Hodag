@@ -13,28 +13,17 @@ _global_script_classes=[{
 "class": &"Inventory",
 "language": &"GDScript",
 "path": "res://Player/inventory.gd"
-}, {
-"base": "Resource",
-"class": &"ItemResource",
-"language": &"GDScript",
-"path": "res://Items/item_resource.gd"
 }]
 _global_script_class_icons={
-"Inventory": "",
-"ItemResource": ""
+"Inventory": ""
 }
 
 [application]
 
-config/name="FirstPersonKF"
+config/name="Hodag"
 run/main_scene="res://world.tscn"
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
 config/icon="res://icon.png"
-
-[autoload]
-
-ItemDatabase="*res://Managers/item_database.gd"
-GameManager="*res://Managers/game_manager.gd"
 
 [display]
 
