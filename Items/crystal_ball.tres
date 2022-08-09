@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://ci7xkwscitja7"]
+
+[ext_resource type="Script" path="res://Items/item_resource.gd" id="1_dxsvk"]
+
+[resource]
+script = ExtResource("1_dxsvk")
+name = "Crystal Ball"
+stackable = true
+max_stack_size = 4
+type = 3

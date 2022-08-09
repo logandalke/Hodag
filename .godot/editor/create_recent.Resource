@@ -1,0 +1,2 @@
+ItemResource (item.gd)
+Resource

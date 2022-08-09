@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://Item Scenes/crystal_ball.gd" id="1_j2tjc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aui4m"]
+albedo_color = Color(0.415686, 1, 0.360784, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_g68wh"]
+material = SubResource("StandardMaterial3D_aui4m")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_16ocf"]
+
+[node name="Crystal Ball" type="Area3D"]
+script = ExtResource("1_j2tjc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+mesh = SubResource("SphereMesh_g68wh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.49, 0, 0, 0, 0.49, 0, 0, 0, 0.49, 0, 0, 0)
+shape = SubResource("SphereShape3D_16ocf")
+
+[connection signal="body_entered" from="." to="." method="_on_crystal_ball_body_entered"]
