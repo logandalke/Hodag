@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://8cb83a47bsoe"]
+[gd_scene load_steps=7 format=3 uid="uid://8cb83a47bsoe"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_wqsqa"]
 [ext_resource type="PackedScene" uid="uid://b43rhvnfi8ajj" path="res://Menu/pause_menu.tscn" id="2_vtixv"]
@@ -6,6 +6,15 @@
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_bje5y"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_okv44"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pqwbm"]
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_xovkl"]
+material = SubResource("StandardMaterial3D_pqwbm")
 
 [node name="Player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_wqsqa")
@@ -21,4 +30,22 @@ shape = SubResource("CapsuleShape3D_okv44")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+target_position = Vector3(0, 0, -100)
+
 [node name="PauseMenu" parent="." instance=ExtResource("2_vtixv")]
+
+[node name="CPUParticles3D" type="CPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.88586, -0.451559)
+visibility_range_begin_margin = 1.0
+amount = 50
+lifetime = 4.0
+speed_scale = 0.5
+mesh = SubResource("QuadMesh_xovkl")
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3(1, 1, 1)
+gravity = Vector3(0, -1, 0)
+angle_max = 360.0
+scale_amount_min = 0.1
+scale_amount_max = 0.1

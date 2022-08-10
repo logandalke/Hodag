@@ -2,6 +2,10 @@ extends CharacterBody3D
 
 var health = 50
 
+@export var fire_rate = 1.5
+@export var clip_size = 6
+
+var can_fire = true
 
 @export var controller_sensitivity = 5
 
@@ -13,7 +17,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 
 @onready var camera = $Camera3D
-
+@onready var raycast = $Camera3D/RayCast3D
 
 
 
@@ -34,13 +38,19 @@ func _unhandled_input(event):
 		$PauseMenu.pause()
 	
 func _process(delta):
-	# Quit with escape key
-#	if Input.is_action_just_pressed("quit"):
-#		get_tree().quit()
 
-		
 	if health <= 0:
 		$PauseMenu.pause()
+	
+	if Input.is_action_just_pressed("attack") and can_fire:
+		if clip_size > 0:
+			print("fire!")
+			clip_size -= 1
+			check_hit()
+			print(clip_size)
+			can_fire = false
+			await get_tree().create_timer(fire_rate).timeout
+			can_fire = true
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -72,20 +82,9 @@ func gamepad_handler():
 		rotate_y(deg2rad(-axis_vector.x) * controller_sensitivity)
 		camera.rotate_x(deg2rad(-axis_vector.y) * controller_sensitivity)
 
-#OPEN EQUIP MENU. RETURN TO THIS. PUT OPEN EQUIP IN PROCESS
-#func open_equipment():
-#	if Input.is_action_just_pressed("menu"):
-#		$EquipmentMenu.open()
-
-## Handles attack collision and damage - OLD AREA DETECTION
-#func _on_hitbox_area_entered(enemy):
-#	if enemy.is_in_group("enemy") and enemy not in enemies_damaged:
-#		print("enemy hit!")
-#		enemy.health -= 20
-#		enemies_damaged.append(enemy)
-#		print(enemies_damaged)
-
-
-
-
-
+func check_hit():
+	if raycast.is_colliding():
+		var collider = raycast.get_collider()
+		if collider.is_in_group("enemy"):
+			print("enemy hit!")
+			collider.queue_free()

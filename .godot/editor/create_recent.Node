@@ -1,3 +1,7 @@
+GPUParticles3D
+CPUParticles3D
+Node
+RayCast3D
 AspectRatioContainer
 VSplitContainer
 Button
@@ -19,7 +23,6 @@ CharacterBody3D
 NavigationAgent3D
 NavigationRegion3D
 CSGCombiner3D
-Node
 Panel
 Control
 Node3D
@@ -27,6 +30,3 @@ RigidDynamicBody3D
 AnimationPlayer
 AnimationTree
 Label
-VBoxContainer
-MarginContainer
-PanelContainer
