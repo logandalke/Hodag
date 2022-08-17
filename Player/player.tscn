@@ -1,23 +1,373 @@
-[gd_scene load_steps=7 format=3 uid="uid://8cb83a47bsoe"]
+[gd_scene load_steps=21 format=3 uid="uid://8cb83a47bsoe"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_wqsqa"]
+[ext_resource type="Texture2D" uid="uid://c7unk0v2rqh48" path="res://Untitled-2.png" id="2_7h7t1"]
+[ext_resource type="PackedScene" uid="uid://cdtfesrglvg5y" path="res://gun.glb" id="2_mmv5g"]
 [ext_resource type="PackedScene" uid="uid://b43rhvnfi8ajj" path="res://Menu/pause_menu.tscn" id="2_vtixv"]
+[ext_resource type="Texture2D" uid="uid://cbfi80pixlp6l" path="res://gunsmoke.png" id="3_7cn2k"]
+[ext_resource type="Texture2D" uid="uid://b14rrvbqkojf7" path="res://Sprites/flash2.png" id="4_slnh1"]
+[ext_resource type="AudioStream" uid="uid://3p6yfneudusq" path="res://128299__xenonn__layered-gunshot-5.wav" id="6_a86o7"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_bje5y"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_okv44"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pqwbm"]
-billboard_mode = 3
-particles_anim_h_frames = 1
-particles_anim_v_frames = 1
-particles_anim_loop = false
+[sub_resource type="Animation" id="Animation_jnti4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:flip_h")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
 
-[sub_resource type="QuadMesh" id="QuadMesh_xovkl"]
-material = SubResource("StandardMaterial3D_pqwbm")
+[sub_resource type="Animation" id="Animation_exqmw"]
+resource_name = "smoke_movement"
+length = 0.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:flip_h")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b2nrp"]
+_data = {
+"RESET": SubResource("Animation_jnti4"),
+"smoke_movement": SubResource("Animation_exqmw")
+}
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ghja3"]
+blend_mode = 1
+
+[sub_resource type="Animation" id="Animation_jpt50"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D/gun:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -1.40496, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D/gun:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.557209, -0.487988, -0.900845)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("Camera3D/Flash:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Camera3D/AimFlash:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Camera3D/Control/TextureRect:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Camera3D/gun/Gunsmoke:flip_h")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_m1ftp"]
+resource_name = "aim"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D/gun:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -1.40496, 0), Vector3(0, -1.5708, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D/gun:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.557209, -0.487988, -0.900845), Vector3(0, -0.238, -0.571)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("Camera3D/Control/TextureRect:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="Animation" id="Animation_1ouf8"]
+resource_name = "aim_fire"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D/gun:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0244602, 0.0433786, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, -0.238, -0.571), Vector3(0, -0.188, -0.571), Vector3(0.028, -0.243, -0.571), Vector3(0, -0.238, -0.571)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D/gun:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0244602, 0.0433786, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, -1.5708, 0), Vector3(0, -1.5708, -0.411898), Vector3(0, -1.44339, -0.565487), Vector3(0, -1.5708, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D/AimFlash:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0405121),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_gaujj"]
+resource_name = "fire"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D/gun:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.025263, 0.0421783, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 6.72717),
+"update": 0,
+"values": [Vector3(0, -1.40496, 0), Vector3(0, -1.40499, -0.883137), Vector3(0, -1.40499, -1.01753), Vector3(0, -1.40496, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D/gun:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.025263, 0.0421783, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 6.72717),
+"update": 0,
+"values": [Vector3(0.557209, -0.487988, -0.900845), Vector3(0.557, -0.162, -0.901), Vector3(0.587, -0.162, -0.901), Vector3(0.557209, -0.487988, -0.900845)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D/Flash:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.000859375, 0.00773438, 0.0404297),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Camera3D/Control/TextureRect:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_jpt3n"]
+resource_name = "idle"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D/Flash:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D/gun:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector3(0.557209, -0.487988, -0.900845), Vector3(0.557, -0.432, -0.901)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D/gun:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-2),
+"update": 0,
+"values": [Vector3(0, -1.40496, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Camera3D/Control/TextureRect:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_cgp43"]
+resource_name = "idle_long"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D/gun:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector3(0.557, -0.765, -0.901), Vector3(0.557, -0.677, -0.901)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D/gun:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-2),
+"update": 0,
+"values": [Vector3(0, -0.781907, 0.561996)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D/Flash:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-2),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_85q82"]
+_data = {
+"RESET": SubResource("Animation_jpt50"),
+"aim": SubResource("Animation_m1ftp"),
+"aim_fire": SubResource("Animation_1ouf8"),
+"fire": SubResource("Animation_gaujj"),
+"idle": SubResource("Animation_jpt3n"),
+"idle_long": SubResource("Animation_cgp43")
+}
 
 [node name="Player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_wqsqa")
+ads_aim = Vector3(0, -0.238, -0.571)
+ads_default = Vector3(0.557209, -0.487988, -0.900845)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -30,22 +380,79 @@ shape = SubResource("CapsuleShape3D_okv44")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
+[node name="gun" parent="Camera3D" instance=ExtResource("2_mmv5g")]
+transform = Transform3D(0.0285583, 0, -0.170626, 0, 0.173, 0, 0.170626, 0, 0.0285583, 0.557209, -0.487988, -0.900845)
+
+[node name="Gunsmoke" type="Sprite3D" parent="Camera3D/gun"]
+transform = Transform3D(-1.78814e-07, 0, 1, 0, 2.645, 0, -1, 0, -1.78814e-07, -2.42216, 3.24758, 0.0335078)
+visible = false
+transparency = 0.77
+cast_shadow = 0
+flip_h = true
+modulate = Color(0.368627, 0.368627, 0.368627, 1)
+pixel_size = 0.0445
+billboard = 1
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("3_7cn2k")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3D/gun/Gunsmoke"]
+libraries = {
+"": SubResource("AnimationLibrary_b2nrp")
+}
+
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
 target_position = Vector3(0, 0, -100)
 
+[node name="Control" type="Control" parent="Camera3D"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="Camera3D/Control"]
+texture_filter = 2
+material = SubResource("CanvasItemMaterial_ghja3")
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -14.0
+offset_top = -14.0
+offset_right = 14.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7h7t1")
+ignore_texture_size = true
+metadata/_edit_layout_mode = 1
+
+[node name="Flash" type="Sprite3D" parent="Camera3D"]
+transform = Transform3D(0.934204, -0.356738, 0, 0.356738, 0.934204, 0, 0, 0, 1, 0.476, -0.279, -1.302)
+visible = false
+pixel_size = 0.0085
+texture = ExtResource("4_slnh1")
+
+[node name="AimFlash" type="Sprite3D" parent="Camera3D"]
+transform = Transform3D(0.934204, -0.356738, 0, 0.356738, 0.934204, 0, 0, 0, 1, 0, -0.023, -1.014)
+visible = false
+pixel_size = 0.0104
+texture = ExtResource("4_slnh1")
+
 [node name="PauseMenu" parent="." instance=ExtResource("2_vtixv")]
 
-[node name="CPUParticles3D" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.88586, -0.451559)
-visibility_range_begin_margin = 1.0
-amount = 50
-lifetime = 4.0
-speed_scale = 0.5
-mesh = SubResource("QuadMesh_xovkl")
-emission_shape = 1
-emission_sphere_radius = 1.0
-direction = Vector3(1, 1, 1)
-gravity = Vector3(0, -1, 0)
-angle_max = 360.0
-scale_amount_min = 0.1
-scale_amount_max = 0.1
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+libraries = {
+"": SubResource("AnimationLibrary_85q82")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_a86o7")
+volume_db = -5.0
+pitch_scale = 1.12
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_a86o7")
+volume_db = -2.0
+pitch_scale = 50.0
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

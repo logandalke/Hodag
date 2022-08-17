@@ -4,6 +4,9 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_futub"]
 albedo_color = Color(1, 0, 0.0235294, 1)
+emission_enabled = true
+emission = Color(1, 0, 0, 1)
+emission_energy = 50000.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_iewrd"]
 material = SubResource("StandardMaterial3D_futub")
@@ -314,7 +317,7 @@ avoidance_enabled = true
 transform = Transform3D(0.945604, 0, -0.325321, 0, 1, 0, 0.325321, 0, 0.945604, 0, 0.848667, 0)
 
 [node name="WeaponMesh" type="MeshInstance3D" parent="WeaponPivot"]
-transform = Transform3D(0.0855988, 0.513665, 0.00585853, -0.0484526, 0.757536, 0.0437462, 0.0180329, -0.402849, 0.0897325, 0.417305, -0.254443, -0.582979)
+transform = Transform3D(0.0855988, 0.513665, 0.00585853, -0.0484526, 0.757536, 0.0437462, 0.0180329, -0.402849, 0.0897325, 0.417305, -0.079986, -0.582979)
 mesh = SubResource("BoxMesh_llor4")
 
 [node name="Hitbox" type="Area3D" parent="WeaponPivot/WeaponMesh" groups=["player"]]

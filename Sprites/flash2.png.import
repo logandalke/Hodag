@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b14rrvbqkojf7"
+path.s3tc="res://.godot/imported/flash2.png-7c7825e9b61daebfe5c278577d7094e1.s3tc.ctex"
+path.etc2="res://.godot/imported/flash2.png-7c7825e9b61daebfe5c278577d7094e1.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://Sprites/flash2.png"
+dest_files=["res://.godot/imported/flash2.png-7c7825e9b61daebfe5c278577d7094e1.s3tc.ctex", "res://.godot/imported/flash2.png-7c7825e9b61daebfe5c278577d7094e1.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/bptc_ldr=0
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

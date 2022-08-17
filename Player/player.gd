@@ -6,11 +6,21 @@ var health = 50
 @export var clip_size = 6
 
 var can_fire = true
+var is_aiming = false
+
+@export var ads_aim : Vector3
+@export var ads_default : Vector3
+const ads_lerp = 20
+
 
 @export var controller_sensitivity = 5
 
-const speed = 5.0
+
+
+var speed = 5.0
 const jump_velocity = 4.5
+
+
 
 # Get the gravity from the project settings to be synced with RigidDynamicBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -18,11 +28,13 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
-
-
-
-
-
+@onready var animation_player = $AnimationPlayer
+@onready var gun = $Camera3D/gun
+@onready var reticle = $Camera3D/Control/TextureRect
+@onready var shot_sound = $AudioStreamPlayer
+@onready var empty_sound = $AudioStreamPlayer2
+@onready var gunsmoke = $Camera3D/gun/Gunsmoke
+@onready var smoke_animation_player = $Camera3D/gun/Gunsmoke/AnimationPlayer
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -41,16 +53,44 @@ func _process(delta):
 
 	if health <= 0:
 		$PauseMenu.pause()
-	
+
+
+
 	if Input.is_action_just_pressed("attack") and can_fire:
 		if clip_size > 0:
 			print("fire!")
 			clip_size -= 1
+			shot_sound.play()
+			if not is_aiming:
+				animation_player.play("fire")
+			elif is_aiming:
+				animation_player.play("aim_fire")
 			check_hit()
 			print(clip_size)
 			can_fire = false
+			gunsmoke.visible = true
+			smoke_animation_player.play("smoke_movement")
 			await get_tree().create_timer(fire_rate).timeout
+			gunsmoke.visible = false
 			can_fire = true
+		elif clip_size <= 0:
+			empty_sound.play()
+
+	if Input.is_action_pressed("aim") and not animation_player.current_animation == "aim_fire":
+		speed = 1
+		animation_player.stop()
+		gun.transform.origin = gun.transform.origin.lerp(ads_aim, ads_lerp * delta)
+		gun.rotation = Vector3(0, deg2rad(-90), 0)
+		reticle.visible = false
+		is_aiming = true
+		
+
+
+	if Input.is_action_just_released("aim"):
+		animation_player.play_backwards("aim")
+		speed = 5.0
+		reticle.visible = true
+		is_aiming = false
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -88,3 +128,12 @@ func check_hit():
 		if collider.is_in_group("enemy"):
 			print("enemy hit!")
 			collider.queue_free()
+		if collider.is_in_group("terrain"):
+			print("terrain hit!")
+
+
+func _on_animation_player_animation_finished(anim_name):
+	if anim_name == "fire":
+		animation_player.play("idle")
+
+
