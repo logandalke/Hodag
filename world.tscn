@@ -90,7 +90,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 mesh = SubResource("PlaneMesh_a8jjl")
 skeleton = NodePath("../../../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Environment/NavigationRegion3D/Environment/Ground"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment/NavigationRegion3D/Environment/Ground" groups=["terrain"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/NavigationRegion3D/Environment/Ground/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_f66vy")
@@ -160,7 +160,7 @@ transform = Transform3D(0.669333, 0, 0, 0, 0.669333, 0, 0, 0, 2.10567, -3.98691,
 mesh = SubResource("BoxMesh_fpc35")
 skeleton = NodePath("../../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Environment/NavigationRegion3D/Environment/MeshInstance3D8"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment/NavigationRegion3D/Environment/MeshInstance3D8" groups=["terrain"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/NavigationRegion3D/Environment/MeshInstance3D8/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qllp0")

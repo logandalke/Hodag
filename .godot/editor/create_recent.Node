@@ -1,8 +1,10 @@
-AnimationPlayer
+Timer
+CPUParticles3D
 Sprite3D
+MeshInstance3D
+AnimationPlayer
 AudioStreamPlayer
 AudioStreamPlayer3D
-MeshInstance3D
 TextureRect
 ColorRect
 Control
@@ -12,7 +14,6 @@ Camera3D
 SubViewport
 SubViewportContainer
 SpotLight3D
-CPUParticles3D
 GPUParticles3D
 Node
 RayCast3D

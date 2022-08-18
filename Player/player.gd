@@ -35,6 +35,10 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var empty_sound = $AudioStreamPlayer2
 @onready var gunsmoke = $Camera3D/gun/Gunsmoke
 @onready var smoke_animation_player = $Camera3D/gun/Gunsmoke/AnimationPlayer
+
+@onready var bullet_hole = preload("res://bullet_hole.tscn")
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -125,11 +129,15 @@ func gamepad_handler():
 func check_hit():
 	if raycast.is_colliding():
 		var collider = raycast.get_collider()
+		var hole = bullet_hole.instantiate()
 		if collider.is_in_group("enemy"):
 			print("enemy hit!")
 			collider.queue_free()
 		if collider.is_in_group("terrain"):
 			print("terrain hit!")
+			raycast.get_collider().add_child(hole)
+			hole.global_transform.origin = raycast.get_collision_point()
+			hole.look_at(raycast.get_collision_point() + raycast.get_collision_normal() , Vector3.BACK)
 
 
 func _on_animation_player_animation_finished(anim_name):

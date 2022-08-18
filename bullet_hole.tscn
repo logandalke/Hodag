@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://bu3rt7k8huknt"]
+
+[ext_resource type="Script" path="res://bullet_hole.gd" id="1_ftrpa"]
+[ext_resource type="Texture2D" uid="uid://dln6yh4tegfdy" path="res://snowflake.png" id="1_k5yp6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6vf2u"]
+transparency = 1
+albedo_color = Color(0.243137, 0.243137, 0.243137, 1)
+albedo_texture = ExtResource("1_k5yp6")
+emission_enabled = true
+emission = Color(0.196078, 0.196078, 0.196078, 1)
+texture_filter = 0
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_puq53"]
+material = SubResource("StandardMaterial3D_6vf2u")
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_ftrpa")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transparency = 0.23
+cast_shadow = 0
+modulate = Color(0.262745, 0.262745, 0.262745, 1)
+pixel_size = 0.002
+texture_filter = 0
+texture = ExtResource("1_k5yp6")
+
+[node name="CPUParticles3D" type="CPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+cast_shadow = 0
+emitting = false
+amount = 4
+one_shot = true
+explosiveness = 1.0
+local_coords = false
+mesh = SubResource("QuadMesh_puq53")
+direction = Vector3(0, 1, 0)
+initial_velocity_min = 1.0
+initial_velocity_max = 2.0
+scale_amount_min = 0.07
+scale_amount_max = 0.07
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

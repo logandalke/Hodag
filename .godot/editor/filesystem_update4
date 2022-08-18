@@ -1,4 +1,6 @@
 res://world.tscn
 res://Enemies/enemy.gd
 res://Player/player.tscn
+res://bullet_hole.tscn
 res://Player/player.gd
+res://bullet_hole.gd

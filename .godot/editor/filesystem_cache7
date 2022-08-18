@@ -1,6 +1,7 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1660770968
+::res://::1660802742
 128299__xenonn__layered-gunshot-5.wav::AudioStreamSample::1998178656913099484::1660684927::1660684927::1::::<><>::
+bullet_hole.tscn::PackedScene::3849067950233415589::1660802729::0::1::::<><>::uid://dln6yh4tegfdy
 Environment.tscn::PackedScene::6583123870774155415::1660088975::0::1::::<><>::
 gun.gd::GDScript::-1::1660633204::0::1::::<>Node3D<>::
 gun.glb::PackedScene::5022942775737010180::1660582365::1660582438::1::::<><>::
@@ -10,9 +11,9 @@ snowflake.png::CompressedTexture2D::7960101741061553570::1660243688::1660767575:
 Untitled-2.png::CompressedTexture2D::7060980444504205383::1660244290::1660244290::1::::<><>::
 Untitled-3.png::CompressedTexture2D::2543529420436735439::1660244014::1660244014::1::::<><>::
 world.gd::GDScript::-1::1660635421::0::1::::<>Node<>::
-world.tscn::PackedScene::650615925545334202::1660770911::0::1::::<><>::uid://8cb83a47bsoe<>res://world.gd<>uid://cwj3amhvlidqk<>uid://dln6yh4tegfdy
-::res://Enemies/::1660770300
-enemy.gd::GDScript::-1::1660770300::0::1::::<>CharacterBody3D<>::
+world.tscn::PackedScene::650615925545334202::1660802634::0::1::::<><>::uid://8cb83a47bsoe<>res://world.gd<>uid://cwj3amhvlidqk<>uid://dln6yh4tegfdy
+::res://Enemies/::1660802578
+enemy.gd::GDScript::-1::1660802578::0::1::::<>CharacterBody3D<>::
 enemy.tscn::PackedScene::6337276045069908230::1660606650::0::1::::<><>::res://Enemies/enemy.gd
 ::res://Menu/::1660606650
 blur.gdshader::Shader::-1::1659506603::0::1::::<><>::
@@ -20,11 +21,11 @@ equipment_menu.gd::GDScript::-1::1660015200::0::1::::<>ColorRect<>::
 equipment_menu.tscn::PackedScene::5960741067742251142::1660087365::0::1::::<><>::res://Menu/blur.gdshader<>res://Menu/equipment_menu.gd
 pause_menu.gd::GDScript::-1::1660015089::0::1::::<>ColorRect<>::
 pause_menu.tscn::PackedScene::4480745539056053667::1660606650::0::1::::<><>::res://Menu/blur.gdshader<>res://Menu/pause_menu.gd
-::res://Player/::1660770953
+::res://Player/::1660802634
 Camera2.gd::GDScript::-1::1660165127::0::1::::<>Camera3D<>::
-player.gd::GDScript::-1::1660770787::0::1::::<>CharacterBody3D<>::
+player.gd::GDScript::-1::1660802512::0::1::::<>CharacterBody3D<>::
 player.gdshader::Shader::-1::1660165783::0::1::::<><>::
-player.tscn::PackedScene::2320481715769070928::1660770953::0::1::::<><>::res://Player/player.gd<>uid://c7unk0v2rqh48<>uid://cdtfesrglvg5y<>uid://b43rhvnfi8ajj<>uid://cbfi80pixlp6l<>uid://b14rrvbqkojf7<>uid://3p6yfneudusq
+player.tscn::PackedScene::2320481715769070928::1660802634::0::1::::<><>::res://Player/player.gd<>uid://c7unk0v2rqh48<>uid://cdtfesrglvg5y<>uid://b43rhvnfi8ajj<>uid://cbfi80pixlp6l<>uid://b14rrvbqkojf7<>uid://3p6yfneudusq
 test.gd::GDScript::-1::1660163990::0::1::::<>SubViewport<>::
 ::res://Sprites/::1660604769
 flash2.png::CompressedTexture2D::4272261225799138110::1660604704::1660604769::1::::<><>::
