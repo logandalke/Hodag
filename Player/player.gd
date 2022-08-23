@@ -16,7 +16,7 @@ const ads_lerp = 20
 @export var controller_sensitivity = 5
 
 
-
+var aim_position
 var speed = 5.0
 const jump_velocity = 4.5
 
@@ -42,6 +42,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	aim_position = raycast.transform.origin
 
 # Sets input 
 func _unhandled_input(event):
@@ -53,12 +54,14 @@ func _unhandled_input(event):
 	if event.is_action_pressed("ui_cancel"):
 		$PauseMenu.pause()
 	
+	
 func _process(delta):
+
 
 	if health <= 0:
 		$PauseMenu.pause()
 
-
+	aim_random()
 
 	if Input.is_action_just_pressed("attack") and can_fire:
 		if clip_size > 0:
@@ -80,15 +83,14 @@ func _process(delta):
 		elif clip_size <= 0:
 			empty_sound.play()
 
-	if Input.is_action_pressed("aim") and not animation_player.current_animation == "aim_fire":
+	if Input.is_action_pressed("aim") and not animation_player.current_animation == "aim_fire" and not animation_player.current_animation == "fire":
 		speed = 1
 		animation_player.stop()
+		raycast.position = Vector3(0 , 0 , 0)
 		gun.transform.origin = gun.transform.origin.lerp(ads_aim, ads_lerp * delta)
 		gun.rotation = Vector3(0, deg2rad(-90), 0)
 		reticle.visible = false
 		is_aiming = true
-		
-
 
 	if Input.is_action_just_released("aim"):
 		animation_player.play_backwards("aim")
@@ -132,13 +134,15 @@ func check_hit():
 		var hole = bullet_hole.instantiate()
 		if collider.is_in_group("enemy"):
 			print("enemy hit!")
-			collider.queue_free()
+			collider.damaged()
 		if collider.is_in_group("terrain"):
 			print("terrain hit!")
 			raycast.get_collider().add_child(hole)
-			hole.global_transform.origin = raycast.get_collision_point()
+			hole.global_transform.origin = raycast.get_collision_point() + (.01 * raycast.get_collision_normal())
 			hole.look_at(raycast.get_collision_point() + raycast.get_collision_normal() , Vector3.BACK)
 
+func aim_random():
+	raycast.position = Vector3(randf_range(-0.4 , 0.4) , randf_range(-0.4 , 0.4), 0)
 
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "fire":

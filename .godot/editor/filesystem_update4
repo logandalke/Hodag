@@ -1,6 +1,8 @@
-res://world.tscn
-res://Enemies/enemy.gd
 res://Player/player.tscn
-res://bullet_hole.tscn
+res://Enemies/enemy.gd
+res://world.tscn
+res://Enemies/enemy.tscn
 res://Player/player.gd
-res://bullet_hole.gd
+res://bullet_hole.tscn
+res://Menu/pause_menu.gd
+res://Menu/pause_menu.tscn

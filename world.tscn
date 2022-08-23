@@ -20,6 +20,7 @@ ssao_enabled = true
 glow_enabled = true
 glow_bloom = 0.06
 fog_enabled = true
+fog_light_color = Color(0.364706, 0.439216, 0.513726, 1)
 fog_density = 0.1
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_ygukb"]

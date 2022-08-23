@@ -50,3 +50,8 @@ func _on_animation_player_animation_finished(anim_name):
 		hitbox.monitoring = false
 		anim_player.play("enemy_idle")
 		enemies_damaged.clear()
+
+func damaged():
+	speed = 0
+	await get_tree().create_timer(4).timeout
+	speed = 2
