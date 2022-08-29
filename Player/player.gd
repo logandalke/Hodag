@@ -98,6 +98,7 @@ func _process(delta):
 		reticle.visible = true
 		is_aiming = false
 
+
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
@@ -146,6 +147,8 @@ func aim_random():
 
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "fire":
+		animation_player.play("idle")
+	if anim_name == "aim":
 		animation_player.play("idle")
 
 
