@@ -11,6 +11,7 @@ var health = 100
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	queue_free()
 	if health <= 0:
 		queue_free()
 

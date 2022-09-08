@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_wqsqa"]
 [ext_resource type="Texture2D" uid="uid://c7unk0v2rqh48" path="res://Untitled-2.png" id="2_7h7t1"]
-[ext_resource type="PackedScene" uid="uid://cdtfesrglvg5y" path="res://gun.glb" id="2_mmv5g"]
+[ext_resource type="PackedScene" uid="uid://cdtfesrglvg5y" path="res://Player/Gun/gun.glb" id="2_mmv5g"]
 [ext_resource type="PackedScene" uid="uid://b43rhvnfi8ajj" path="res://Menu/pause_menu.tscn" id="2_vtixv"]
-[ext_resource type="Texture2D" uid="uid://cbfi80pixlp6l" path="res://gunsmoke.png" id="3_7cn2k"]
+[ext_resource type="Texture2D" uid="uid://cbfi80pixlp6l" path="res://Player/Gun/gunsmoke.png" id="3_7cn2k"]
 [ext_resource type="Texture2D" uid="uid://ckvryps0currj" path="res://Sprites/flash3.png" id="5_nmn6q"]
-[ext_resource type="AudioStream" uid="uid://3p6yfneudusq" path="res://128299__xenonn__layered-gunshot-5.wav" id="6_a86o7"]
+[ext_resource type="AudioStream" uid="uid://3p6yfneudusq" path="res://Player/Gun/128299__xenonn__layered-gunshot-5.wav" id="6_a86o7"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_bje5y"]
 

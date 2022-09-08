@@ -36,7 +36,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var gunsmoke = $Camera3D/gun/Gunsmoke
 @onready var smoke_animation_player = $Camera3D/gun/Gunsmoke/AnimationPlayer
 
-@onready var bullet_hole = preload("res://bullet_hole.tscn")
+@onready var bullet_hole = preload("res://Player/Gun/bullet_hole.tscn")
 
 
 # Called when the node enters the scene tree for the first time.

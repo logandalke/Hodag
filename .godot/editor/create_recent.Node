@@ -1,3 +1,5 @@
+SpotLight3D
+OmniLight3D
 Timer
 CPUParticles3D
 Sprite3D
@@ -13,7 +15,6 @@ Container
 Camera3D
 SubViewport
 SubViewportContainer
-SpotLight3D
 GPUParticles3D
 Node
 RayCast3D
@@ -29,5 +30,3 @@ TabContainer
 ItemList
 TabBar
 HBoxContainer
-VSeparator
-CollisionShape3D
