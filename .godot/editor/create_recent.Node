@@ -1,9 +1,11 @@
+CharacterBody3D
+CollisionShape3D
+MeshInstance3D
 SpotLight3D
 OmniLight3D
 Timer
 CPUParticles3D
 Sprite3D
-MeshInstance3D
 AnimationPlayer
 AudioStreamPlayer
 AudioStreamPlayer3D
@@ -29,4 +31,3 @@ BaseButton
 TabContainer
 ItemList
 TabBar
-HBoxContainer
