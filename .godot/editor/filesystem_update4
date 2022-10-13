@@ -1,5 +1,9 @@
-res://Enemies/enemy.tscn
+res://EnviroFinal.tscn
 res://Enemies/enemy.gd
+res://Enemies/enemy.tscn
 res://Player/player.tscn
 res://world.tscn
-res://Enemies/hodagapplied.tscn
+res://Enviro Assets/rock.tscn
+res://Enviro Assets/deer.tscn
+res://Enviro Assets/warehouse.tscn
+res://Enviro Assets/reel.tscn

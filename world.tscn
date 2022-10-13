@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://jjfsw6h6g4pi"]
+[gd_scene load_steps=18 format=3 uid="uid://jjfsw6h6g4pi"]
 
 [ext_resource type="PackedScene" uid="uid://8cb83a47bsoe" path="res://Player/player.tscn" id="1_oilbu"]
 [ext_resource type="Script" path="res://world.gd" id="1_rycr7"]
 [ext_resource type="PackedScene" uid="uid://cwj3amhvlidqk" path="res://Enemies/enemy.tscn" id="2_vknrx"]
-[ext_resource type="Texture2D" uid="uid://dln6yh4tegfdy" path="res://snowflake.png" id="4_vd1lh"]
+[ext_resource type="Texture2D" uid="uid://c7noxpuh7bacd" path="res://snowflake - Copy.png" id="5_8wi8y"]
 [ext_resource type="PackedScene" uid="uid://co00lv7xlf8jq" path="res://Enemies/hodagapplied.tscn" id="5_ds6wh"]
+[ext_resource type="PackedScene" uid="uid://cn1vmtdippnf" path="res://EnviroFinal.tscn" id="6_mm8au"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kqi7e"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -47,11 +48,12 @@ data = PackedVector3Array(-2.5, 2.5, 2.5, 2.5, 2.5, 2.5, -2.5, -2.5, 2.5, 2.5, 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_urv1w"]
 transparency = 1
-albedo_texture = ExtResource("4_vd1lh")
+albedo_texture = ExtResource("5_8wi8y")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 backlight_enabled = true
 backlight = Color(0.741176, 0.741176, 0.741176, 1)
+texture_filter = 0
 disable_receive_shadows = true
 billboard_mode = 3
 particles_anim_h_frames = 1
@@ -67,9 +69,10 @@ material = SubResource("StandardMaterial3D_urv1w")
 script = ExtResource("1_rycr7")
 
 [node name="hodagapplied" parent="." instance=ExtResource("5_ds6wh")]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 2.33007, -2.85828)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 5.27732, -16.0232)
 
 [node name="Player" parent="." instance=ExtResource("1_oilbu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.822753, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
@@ -81,7 +84,7 @@ directional_shadow_max_distance = 250.0
 environment = SubResource("Environment_mu7pa")
 
 [node name="Enemy" parent="." instance=ExtResource("2_vknrx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3133, 1.35897, -2.16594)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.73919, 0.878155, -1.00983)
 
 [node name="Environment" type="Node" parent="."]
 
@@ -141,7 +144,7 @@ skeleton = NodePath("../../..")
 shape = SubResource("ConcavePolygonShape3D_7dw2m")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Environment/NavigationRegion3D/Environment"]
-transform = Transform3D(0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, 3.87138, 0.362988, 0.929004)
+transform = Transform3D(0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, 3.78192, 0.362988, 1.10583)
 mesh = SubResource("BoxMesh_fpc35")
 skeleton = NodePath("../../..")
 
@@ -171,13 +174,14 @@ skeleton = NodePath("../../..")
 shape = SubResource("ConcavePolygonShape3D_qllp0")
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="Environment/NavigationRegion3D/Environment"]
-transform = Transform3D(0.333333, 0, 0, 0, 0.319901, -0.260036, 0, 0.0936728, 0.888045, 3.87138, -0.224619, 3.68965)
+transform = Transform3D(0.333333, 0, 0, 0, 0.319901, -0.260036, 0, 0.0936728, 0.888045, 10.4132, -0.224619, 3.88909)
 mesh = SubResource("BoxMesh_fpc35")
 skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Environment/NavigationRegion3D/Environment/MeshInstance3D6"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/NavigationRegion3D/Environment/MeshInstance3D6/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, -7.45058e-09, 1, -18.5383, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_qllp0")
 
 [node name="CPUParticles3D" type="CPUParticles3D" parent="."]
@@ -193,3 +197,5 @@ gravity = Vector3(0, -1.5, 0)
 initial_velocity_max = 1.0
 scale_amount_min = 0.25
 scale_amount_max = 0.25
+
+[node name="EnviroFinal" parent="." groups=["terrain"] instance=ExtResource("6_mm8au")]
