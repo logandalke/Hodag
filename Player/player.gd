@@ -49,7 +49,7 @@ func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * .005)
 		camera.rotate_x(-event.relative.y * .005)
-		camera.rotation.x = clamp(camera.rotation.x, deg2rad(-75), deg2rad(75))
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-75), deg_to_rad(75))
 	# pauses the game
 	if event.is_action_pressed("ui_cancel"):
 		$PauseMenu.pause()
@@ -88,7 +88,7 @@ func _process(delta):
 		animation_player.stop()
 		raycast.position = Vector3(0 , 0 , 0)
 		gun.transform.origin = gun.transform.origin.lerp(ads_aim, ads_lerp * delta)
-		gun.rotation = Vector3(0, deg2rad(-90), 0)
+		gun.rotation = Vector3(0, deg_to_rad(-90), 0)
 		reticle.visible = false
 		is_aiming = true
 
@@ -126,8 +126,8 @@ func gamepad_handler():
 	axis_vector.x = Input.get_action_strength("look_right") - Input.get_action_strength("look_left")
 	axis_vector.y = Input.get_action_strength("look_down") - Input.get_action_strength("look_up")
 	if InputEventJoypadMotion:
-		rotate_y(deg2rad(-axis_vector.x) * controller_sensitivity)
-		camera.rotate_x(deg2rad(-axis_vector.y) * controller_sensitivity)
+		rotate_y(deg_to_rad(-axis_vector.x) * controller_sensitivity)
+		camera.rotate_x(deg_to_rad(-axis_vector.y) * controller_sensitivity)
 
 func check_hit():
 	if raycast.is_colliding():

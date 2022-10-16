@@ -6,7 +6,7 @@
 albedo_color = Color(1, 0, 0.0235294, 1)
 emission_enabled = true
 emission = Color(1, 0, 0, 1)
-emission_energy = 50000.0
+emission_energy_multiplier = 50000.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_iewrd"]
 material = SubResource("StandardMaterial3D_futub")

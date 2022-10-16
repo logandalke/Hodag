@@ -5,5 +5,6 @@ res://Player/player.tscn
 res://world.tscn
 res://Enviro Assets/rock.tscn
 res://Enviro Assets/deer.tscn
-res://Enviro Assets/warehouse.tscn
 res://Enviro Assets/reel.tscn
+res://Enviro Assets/hanginglight.tscn
+res://Enemies/hodagapplied.tscn
