@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cn1vmtdippnf"]
+[gd_scene load_steps=21 format=3 uid="uid://dwc4jsrnp7tj2"]
 
 [ext_resource type="PackedScene" uid="uid://ci0em3chfmtod" path="res://Enviro Assets/groundandrail.tscn" id="1_bc7gk"]
 [ext_resource type="PackedScene" uid="uid://dqk7ag73vc6l5" path="res://Enviro Assets/warehouse.tscn" id="1_l44gi"]

@@ -1,11 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://jjfsw6h6g4pi"]
+[gd_scene load_steps=17 format=3 uid="uid://jjfsw6h6g4pi"]
 
 [ext_resource type="PackedScene" uid="uid://8cb83a47bsoe" path="res://Player/player.tscn" id="1_oilbu"]
 [ext_resource type="Script" path="res://world.gd" id="1_rycr7"]
 [ext_resource type="PackedScene" uid="uid://cwj3amhvlidqk" path="res://Enemies/enemy.tscn" id="2_vknrx"]
 [ext_resource type="Texture2D" uid="uid://c7noxpuh7bacd" path="res://snowflake - Copy.png" id="5_8wi8y"]
 [ext_resource type="PackedScene" uid="uid://co00lv7xlf8jq" path="res://Enemies/hodagapplied.tscn" id="5_ds6wh"]
-[ext_resource type="PackedScene" uid="uid://cn1vmtdippnf" path="res://EnviroFinal.tscn" id="6_mm8au"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kqi7e"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -198,5 +197,3 @@ gravity = Vector3(0, -1.5, 0)
 initial_velocity_max = 1.0
 scale_amount_min = 0.25
 scale_amount_max = 0.25
-
-[node name="EnviroFinal" parent="." groups=["terrain"] instance=ExtResource("6_mm8au")]
