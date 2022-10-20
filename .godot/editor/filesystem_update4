@@ -1,5 +1,4 @@
-res://Enemies/enemy.tscn
+res://Enviro Assets/truck.tscn
 res://Enemies/enemy.gd
-res://Player/player.tscn
-res://world.tscn
 res://EnviroFinal.tscn
+res://Player/player.tscn
