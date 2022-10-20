@@ -99,4 +99,17 @@ aim={
 
 [rendering]
 
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=0
+global_illumination/gi/use_half_resolution=true
+camera/depth_of_field/depth_of_field_bokeh_shape=0
+camera/depth_of_field/depth_of_field_bokeh_quality=0
+anti_aliasing/screen_space_roughness_limiter/enabled=false
+occlusion_culling/bvh_build_quality=0
+environment/glow/upscale_mode=0
+environment/screen_space_reflection/roughness_quality=0
+environment/subsurface_scattering/subsurface_scattering_quality=0
+environment/volumetric_fog/volume_size=32
+environment/volumetric_fog/volume_depth=512
+environment/volumetric_fog/use_filter=0
+mesh_lod/lod_change/threshold_pixels=3.0
 textures/canvas_textures/default_texture_filter=0
