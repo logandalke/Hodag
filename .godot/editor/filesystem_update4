@@ -1,3 +1,6 @@
 res://EnviroFinal.tscn
 res://Enemies/enemy.gd
 res://Enviro Assets/truck.tscn
+res://Enviro Assets/hanginglight.tscn
+res://Enviro Assets/warehouse.tscn
+res://Player/player.gd

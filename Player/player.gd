@@ -141,6 +141,8 @@ func check_hit():
 			raycast.get_collider().add_child(hole)
 			hole.global_transform.origin = raycast.get_collision_point() + (.01 * raycast.get_collision_normal())
 			hole.look_at(raycast.get_collision_point() + raycast.get_collision_normal() , Vector3.BACK)
+		if collider.is_in_group("breakable"):
+			collider.get_parent().queue_free()
 
 func aim_random():
 	raycast.position = Vector3(randf_range(-0.4 , 0.4) , randf_range(-0.4 , 0.4), 0)

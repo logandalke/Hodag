@@ -1,8 +1,8 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1666249477
+::res://::1666508413
 bloodground.png::CompressedTexture2D::4450859240655606780::1665101628::1665101628::1::::<><>::
 bloodgroundclipped.png::CompressedTexture2D::4502629813043009898::1665101624::1665101625::1::::<><>::
-EnviroFinal.tscn::PackedScene::8709323203853469929::1666249313::0::1::::<><>::uid://ci0em3chfmtod<>uid://dqk7ag73vc6l5<>uid://b4lki4hdk1it0<>uid://ci2c2jacgtryj<>uid://8cb83a47bsoe<>uid://cc5r0uv8hvb4b<>uid://coeuhl02pmiei<>uid://cwp705lr46gx7<>uid://dauy2osc7ow8f<>uid://bqyf141ef1tsv<>uid://bx6uujrbf7d4t<>uid://du0viikdv1nbx<>uid://dmyxlwx345qxl<>uid://d3iy0dwggpg8y<>uid://c7noxpuh7bacd<>uid://dih0poqsuxhp8
+EnviroFinal.tscn::PackedScene::-1::1666508404::0::1::::<><>::uid://ci0em3chfmtod<>uid://dqk7ag73vc6l5<>uid://b4lki4hdk1it0<>uid://ci2c2jacgtryj<>uid://8cb83a47bsoe<>uid://cc5r0uv8hvb4b<>uid://coeuhl02pmiei<>uid://cwp705lr46gx7<>uid://dauy2osc7ow8f<>res://Enviro Assets/bloodgroundfulltrim.png<>uid://bx6uujrbf7d4t<>uid://du0viikdv1nbx<>uid://dmyxlwx345qxl<>uid://d3iy0dwggpg8y<>uid://c7noxpuh7bacd<>uid://dih0poqsuxhp8
 Environment.tscn::PackedScene::6583123870774155415::1660088975::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1661209908::0::1::::<><>::
 icon.png::CompressedTexture2D::8560295839409568520::1659222703::1660243260::1::::<><>::
@@ -12,15 +12,15 @@ Untitled-2.png::CompressedTexture2D::7060980444504205383::1660244290::1660244290
 Untitled-3.png::CompressedTexture2D::2543529420436735439::1660244014::1660244014::1::::<><>::
 world.gd::GDScript::-1::1660635421::0::1::::<>Node<>::
 world.tscn::PackedScene::650615925545334202::1665975090::0::1::::<><>::uid://8cb83a47bsoe<>res://world.gd<>uid://cwj3amhvlidqk<>uid://c7noxpuh7bacd<>uid://co00lv7xlf8jq
-::res://Enemies/::1666247173
-enemy.gd::GDScript::-1::1666247173::0::1::::<>CharacterBody3D<>::
+::res://Enemies/::1666507879
+enemy.gd::GDScript::-1::1666507879::0::1::::<>CharacterBody3D<>::
 enemy.tscn::PackedScene::6337276045069908230::1665975089::0::1::::<><>::res://Enemies/enemy.gd
 hodagapplied.gd::GDScript::-1::1663631884::0::1::::<>CharacterBody3D<>::
 hodagapplied.glb::PackedScene::7280593639922532845::1662601390::1662602297::1::::<><>::
 hodagapplied.tscn::PackedScene::5808633344206309118::1665975093::0::1::::<><>::res://Enemies/hodagapplied.gd<>uid://lm5mh5cjetvv
 HodagEmission.png::CompressedTexture2D::798693166487587483::1662957716::1662957745::1::::<><>::
-::res://Enviro Assets/::1666249313
-bloodgroundfultriml.png::CompressedTexture2D::3559338827135950309::1665302806::1665302806::1::::<><>::
+::res://Enviro Assets/::1666508402
+bloodgroundfulltrim.png::CompressedTexture2D::3559338827135950309::1665302806::1666508417::1::::<><>::
 box.glb::PackedScene::863459952689676242::1664994157::1664994158::1::::<><>::
 box.tscn::PackedScene::8615938146691031789::1664994579::0::1::::<><>::
 deer.glb::PackedScene::4043666326297488128::1665099184::1665099185::1::::<><>::
@@ -40,7 +40,7 @@ rock.tscn::PackedScene::4445228294911088079::1665717894::0::1::::<><>::
 tree.glb::PackedScene::8787602963039076508::1664994157::1664994158::1::::<><>::
 tree.tscn::PackedScene::7202055793689917935::1664996097::0::1::::<><>::
 truck.glb::PackedScene::7396972599112857302::1666231801::1666231801::1::::<><>::
-truck.tscn::PackedScene::7736768917078965363::1666249313::0::1::::<><>::uid://b874o36es0tc8
+truck.tscn::PackedScene::7736768917078965363::1666508052::0::1::::<><>::uid://b874o36es0tc8
 truckemission.png::CompressedTexture2D::4770499924532519897::1666232401::1666232406::1::::<><>::
 warehouse.glb::PackedScene::7323795074569597641::1664315326::1664315327::1::::<><>::
 warehouse.tscn::PackedScene::8304870636471157872::1665642966::0::1::::<><>::

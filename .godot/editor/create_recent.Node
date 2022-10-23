@@ -1,8 +1,9 @@
+CPUParticles3D
+GPUParticles3D
+CollisionShape3D
 SpotLight3D
 OmniLight3D
-CollisionShape3D
 StaticBody3D
-GPUParticles3D
 Decal
 Node3D
 DirectionalLight3D
@@ -12,7 +13,6 @@ CharacterBody3D
 NavigationAgent3D
 MeshInstance3D
 Timer
-CPUParticles3D
 Sprite3D
 AnimationPlayer
 AudioStreamPlayer
