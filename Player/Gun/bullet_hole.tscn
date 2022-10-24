@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://rkmicbnsmwhg"]
 
 [ext_resource type="Script" path="res://Player/Gun/bullet_hole.gd" id="1_71ijj"]
 [ext_resource type="Texture2D" uid="uid://dln6yh4tegfdy" path="res://snowflake.png" id="2_47fe3"]
@@ -34,7 +34,6 @@ emitting = false
 amount = 5
 one_shot = true
 explosiveness = 1.0
-local_coords = false
 mesh = SubResource("QuadMesh_puq53")
 direction = Vector3(0, 1, 0)
 initial_velocity_min = 1.0

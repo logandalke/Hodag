@@ -37,7 +37,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var smoke_animation_player = $Camera3D/gun/Gunsmoke/AnimationPlayer
 
 @onready var bullet_hole = preload("res://Player/Gun/bullet_hole.tscn")
-
+@onready var broken_glass = preload("res://Enviro Assets/brokenglass.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -133,6 +133,7 @@ func check_hit():
 	if raycast.is_colliding():
 		var collider = raycast.get_collider()
 		var hole = bullet_hole.instantiate()
+		var glass = broken_glass.instantiate()
 		if collider.is_in_group("enemy"):
 			print("enemy hit!")
 			collider.damaged()
@@ -142,6 +143,7 @@ func check_hit():
 			hole.global_transform.origin = raycast.get_collision_point() + (.01 * raycast.get_collision_normal())
 			hole.look_at(raycast.get_collision_point() + raycast.get_collision_normal() , Vector3.BACK)
 		if collider.is_in_group("breakable"):
+			#collider.get_parent().add_child(glass)
 			collider.get_parent().queue_free()
 
 func aim_random():

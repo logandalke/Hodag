@@ -1,6 +1,16 @@
-res://EnviroFinal.tscn
+res://Enviro Assets/brokenglass.tscn
 res://Enemies/enemy.gd
+res://Enviro Assets/warehousestairs.tscn
+res://Enviro Assets/warehousestairs.gd
+res://EnviroFinal.tscn
 res://Enviro Assets/truck.tscn
-res://Enviro Assets/hanginglight.tscn
 res://Enviro Assets/warehouse.tscn
-res://Player/player.gd
+res://Player/Gun/bullet_hole.tscn
+res://Enviro Assets/groundandrail.tscn
+res://Enviro Assets/box.tscn
+res://Enviro Assets/pine.tscn
+res://Enviro Assets/railcar.tscn
+res://Enviro Assets/reel.tscn
+res://Enviro Assets/rock.tscn
+res://Enviro Assets/tree.tscn
+res://Enviro Assets/woodstack.tscn

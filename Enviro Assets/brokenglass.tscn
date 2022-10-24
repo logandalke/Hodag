@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://bffmnv1ii8g6o"]
+
+[ext_resource type="Texture2D" uid="uid://cph5osxlgo1od" path="res://Enviro Assets/brokenglass.png" id="1_si5ig"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gmj84"]
+transparency = 1
+albedo_texture = ExtResource("1_si5ig")
+emission_enabled = true
+emission = Color(0.658824, 0.658824, 0.658824, 1)
+texture_filter = 2
+disable_receive_shadows = true
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_w6y03"]
+material = SubResource("StandardMaterial3D_gmj84")
+
+[node name="brokenglass" type="Node3D"]
+
+[node name="CpuParticles3d" type="CPUParticles3D" parent="."]
+emitting = false
+amount = 100
+lifetime = 4.0
+one_shot = true
+explosiveness = 1.0
+mesh = SubResource("QuadMesh_w6y03")
+emission_shape = 3
+emission_box_extents = Vector3(4, 3, 0.25)
+direction = Vector3(0, 1, 0)
+initial_velocity_min = 2.0
+initial_velocity_max = 5.0
+angle_min = -90.0
+angle_max = 90.0
+scale_amount_min = 0.25
+scale_amount_max = 0.75
