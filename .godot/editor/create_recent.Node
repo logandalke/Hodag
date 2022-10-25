@@ -1,4 +1,6 @@
 Node3D
+AudioStreamPlayer3D
+AudioStreamPlayer
 CPUParticles3D
 GPUParticles3D
 CollisionShape3D
@@ -15,8 +17,6 @@ MeshInstance3D
 Timer
 Sprite3D
 AnimationPlayer
-AudioStreamPlayer
-AudioStreamPlayer3D
 TextureRect
 ColorRect
 Control
