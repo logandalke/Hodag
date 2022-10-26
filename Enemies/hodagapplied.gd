@@ -6,7 +6,7 @@ extends CharacterBody3D
 
 var enemies_damaged = []
 
-var speed = 2
+var speed = 4
 var health = 100
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -19,7 +19,9 @@ func _physics_process(delta):
 	var next_location = nav_agent.get_next_location()
 	var new_velocity = (next_location - current_location).normalized() * speed
 
-	nav_agent.set_velocity(new_velocity)
+	velocity = velocity.move_toward(new_velocity, .25)
+	move_and_slide()
+#	nav_agent.set_velocity(new_velocity)
 
 
 func update_target_location(target_location):
@@ -51,9 +53,9 @@ func damaged():
 	speed = 2
 
 
-func _on_navigation_agent_3d_velocity_computed(safe_velocity):
-	velocity = velocity.move_toward(safe_velocity, .25)
-	move_and_slide()
+#func _on_navigation_agent_3d_velocity_computed(safe_velocity):
+#	velocity = velocity.move_toward(safe_velocity, .25)
+#	move_and_slide()
 #
 #func _on_navigation_agent_3d_target_reached():
 #	pass # Replace with function body.

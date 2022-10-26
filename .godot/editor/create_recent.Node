@@ -1,9 +1,12 @@
+NavigationAgent3D
+CollisionShape3D
+CharacterBody3D
+NavigationRegion3D
 Node3D
 AudioStreamPlayer3D
 AudioStreamPlayer
 CPUParticles3D
 GPUParticles3D
-CollisionShape3D
 SpotLight3D
 OmniLight3D
 StaticBody3D
@@ -11,8 +14,6 @@ Decal
 DirectionalLight3D
 Node
 CollisionPolygon3D
-CharacterBody3D
-NavigationAgent3D
 MeshInstance3D
 Timer
 Sprite3D
@@ -29,4 +30,3 @@ AspectRatioContainer
 VSplitContainer
 Button
 HSplitContainer
-HFlowContainer
