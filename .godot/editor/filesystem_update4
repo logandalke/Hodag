@@ -1,8 +1,8 @@
-res://EnviroFinal.tscn
-res://Enemies/enemy.gd
 res://Enviro Assets/brokenglass.tscn
+res://Enemies/enemy.gd
+res://Hodag/hodag.gd
 res://Enemies/hodagapplied.tscn
 res://Enviro Assets/truck.tscn
+res://EnviroFinal.tscn
 res://Enemies/enemy.tscn
 res://Hodag/hodag.tscn
-res://Hodag/hodag.gd
