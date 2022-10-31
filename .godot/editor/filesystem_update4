@@ -1,8 +1,9 @@
-res://Enviro Assets/brokenglass.tscn
+res://Hodag/hodag.tscn
 res://Enemies/enemy.gd
+res://Enviro Assets/brokenglass.tscn
 res://Hodag/hodag.gd
-res://Enemies/hodagapplied.tscn
 res://Enviro Assets/truck.tscn
 res://EnviroFinal.tscn
 res://Enemies/enemy.tscn
-res://Hodag/hodag.tscn
+res://Enviro Assets/navigation_region_3d.tscn
+res://Nav Mesh/navmesh.tscn

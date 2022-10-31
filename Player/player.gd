@@ -141,7 +141,7 @@ func check_hit():
 			print("terrain hit!")
 			raycast.get_collider().add_child(hole)
 			hole.global_transform.origin = raycast.get_collision_point() + (.01 * raycast.get_collision_normal())
-			hole.look_at(raycast.get_collision_point() + raycast.get_collision_normal() , Vector3.BACK)
+			hole.look_at(raycast.get_collision_point() + raycast.get_collision_normal() , Vector3.FORWARD)
 		if collider.is_in_group("breakable"):
 			#collider.get_parent().add_child(glass)
 			collider.get_parent().queue_free()

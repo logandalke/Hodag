@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://vgd2mdeqck3g"
+uid="uid://do4q7sygvq2n0"
 path="res://.godot/imported/groundandrail.glb-024d9d37e53317c0747dc7f7c14d24e9.scn"
 
 [deps]
@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/groundandrail.glb-024d9d37e53317c0747dc7f7c14
 
 nodes/root_type="Node3D"
 nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true
 meshes/generate_lods=true
