@@ -1,8 +1,8 @@
+NavigationObstacle3D
+Node3D
 NavigationRegion3D
 AnimationTree
-Node3D
 StaticBody3D
-NavigationObstacle3D
 NavigationLink3D
 NavigationAgent3D
 CollisionShape3D
