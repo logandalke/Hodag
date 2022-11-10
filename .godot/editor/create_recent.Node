@@ -1,3 +1,7 @@
+TextureRect
+Container
+Control
+Camera3D
 NavigationObstacle3D
 Node3D
 NavigationRegion3D
@@ -21,11 +25,7 @@ MeshInstance3D
 Timer
 Sprite3D
 AnimationPlayer
-TextureRect
 ColorRect
-Control
-Container
-Camera3D
 SubViewport
 SubViewportContainer
 RayCast3D
