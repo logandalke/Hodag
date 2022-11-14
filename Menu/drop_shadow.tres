@@ -1,0 +1,33 @@
+[gd_resource type="VisualShader" load_steps=2 format=3 uid="uid://ccgonjaxdvnt3"]
+
+[sub_resource type="VisualShaderNodeColorFunc" id="VisualShaderNodeColorFunc_odagr"]
+
+[resource]
+code = "shader_type canvas_item;
+
+
+
+void fragment() {
+	vec3 n_out2p0;
+// ColorFunc:2
+	vec3 n_in2p0 = vec3(0.00000, 0.00000, 0.00000);
+	{
+		vec3 c = n_in2p0;
+		float max1 = max(c.r, c.g);
+		float max2 = max(max1, c.b);
+		n_out2p0 = vec3(max2, max2, max2);
+	}
+
+
+// Output:0
+	COLOR.rgb = n_out2p0;
+
+
+}
+"
+graph_offset = Vector2(-222.141, -89.1852)
+mode = 1
+flags/light_only = false
+nodes/fragment/2/node = SubResource("VisualShaderNodeColorFunc_odagr")
+nodes/fragment/2/position = Vector2(-260, 80)
+nodes/fragment/connections = PackedInt32Array(2, 0, 0, 0)
