@@ -1,3 +1,7 @@
+SpotLight3D
+Node3D
+OmniLight3D
+Node
 Label
 Panel
 TextEdit
@@ -12,7 +16,6 @@ Container
 Control
 Camera3D
 NavigationObstacle3D
-Node3D
 NavigationRegion3D
 AnimationTree
 StaticBody3D
@@ -24,10 +27,6 @@ AudioStreamPlayer3D
 AudioStreamPlayer
 CPUParticles3D
 GPUParticles3D
-SpotLight3D
-OmniLight3D
 Decal
 DirectionalLight3D
-Node
 CollisionPolygon3D
-MeshInstance3D

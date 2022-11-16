@@ -52,9 +52,8 @@ fog_light_color = Color(0.364706, 0.439216, 0.513726, 1)
 fog_light_energy = 0.15
 fog_density = 0.05
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.07
+volumetric_fog_density = 0.08
 volumetric_fog_emission = Color(0.364706, 0.439216, 0.513726, 1)
-volumetric_fog_length = 60.0
 
 [node name="Environment" type="Node3D"]
 transform = Transform3D(0.39, 0, 0, 0, 0.39, 0, 0, 0, 0.39, 0, 0, 0)
