@@ -20,7 +20,7 @@ var aim_position
 var speed = 5.0
 const jump_velocity = 4.5
 
-
+var collectable_count = 0
 
 # Get the gravity from the project settings to be synced with RigidDynamicBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -28,6 +28,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
+@onready var interactable_raycast = $Camera3D/InteractionRayCast3D
 @onready var animation_player = $AnimationPlayer
 @onready var gun = $Camera3D/gun
 @onready var reticle = $Camera3D/Control/TextureRect
@@ -59,7 +60,8 @@ func _process(delta):
 
 
 	if health <= 0:
-		$PauseMenu.pause()
+#		$PauseMenu.pause()
+		get_tree().change_scene_to_file("res://Menu/main_menu.tscn")
 
 	aim_random()
 
@@ -97,7 +99,14 @@ func _process(delta):
 		speed = 5.0
 		reticle.visible = true
 		is_aiming = false
-
+	
+	if Input.is_action_just_pressed("interact"):
+		if interactable_raycast.is_colliding():
+			var collider = interactable_raycast.get_collider()
+			if collider.is_in_group("interactable"):
+				print("Interaction success")
+				collider.get_parent().queue_free()
+				collectable_count += 1
 
 func _physics_process(delta):
 	# Add the gravity.

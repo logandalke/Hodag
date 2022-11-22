@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/railcar.glb-dfc9c943ebc44796b89f8c5b73a0ef0f.
 
 nodes/root_type="Node3D"
 nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true
 meshes/generate_lods=true

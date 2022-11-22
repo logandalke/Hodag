@@ -1,2 +1,0 @@
-ItemResource (item.gd)
-Resource

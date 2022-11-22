@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://brjwjpkqxk41m"]
+
+[ext_resource type="PackedScene" uid="uid://temff1hlxwl4" path="res://Enviro Assets/sparkplug.tscn" id="1_d35oy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b7vke"]
+
+[node name="SparkPlugs" type="Node3D"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.727569, 0.686034, 0, -0.686034, 0.727569, 15.881, 2.64954, 38.6485)
+light_color = Color(1, 0, 0.0431373, 1)
+light_energy = 2.853
+
+[node name="sparkplug" parent="." instance=ExtResource("1_d35oy")]
+transform = Transform3D(-6.67409e-08, 1.52685, 0.855114, -1.75, -7.64949e-08, 0, 3.73782e-08, -0.855114, 1.52685, 15.8596, 1.17849, 36.7509)
+
+[node name="sparkplug2" parent="." instance=ExtResource("1_d35oy")]
+transform = Transform3D(-1.73234e-08, 0.396313, -1.70453, -1.75, -7.64949e-08, -2.0206e-14, -7.45076e-08, 1.70453, 0.396313, 15.6428, 1.17849, 36.6373)
+
+[node name="sparkplug3" parent="." instance=ExtResource("1_d35oy")]
+transform = Transform3D(7.47345e-08, -1.70973, -0.373281, -1.75, -7.64949e-08, 4.19664e-14, -1.63167e-08, 0.373281, -1.70973, 15.7214, 1.17849, 36.8847)
+
+[node name="Area3D" type="Area3D" parent="." groups=["interactable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.684, 1.48842, 36.8701)
+shape = SubResource("BoxShape3D_b7vke")

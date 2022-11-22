@@ -1,5 +1,8 @@
 res://EnviroFinal.tscn
 res://Enviro Assets/macguffin_shader.tres
-res://Enemies/enemy.gd
-res://Enviro Assets/toolbox.tscn
-res://Enviro Assets/sparkplug.tscn
+res://Hodag/hodag.tscn
+res://Hodag/hodag.gd
+res://Menu/main_menu.tres
+res://Menu/main_menu.tscn
+res://Player/player.gd
+res://Player/player.tscn

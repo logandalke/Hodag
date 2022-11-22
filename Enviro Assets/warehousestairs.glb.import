@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/warehousestairs.glb-8dbf22ba6e1cbaaf3d7602592
 
 nodes/root_type="Node3D"
 nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true
 meshes/generate_lods=true

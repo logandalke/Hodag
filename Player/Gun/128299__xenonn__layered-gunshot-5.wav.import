@@ -1,7 +1,7 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
+type="AudioStreamWAV"
 uid="uid://3p6yfneudusq"
 path="res://.godot/imported/128299__xenonn__layered-gunshot-5.wav-5a156457a73bdc2cab0b305fe838b8de.sample"
 

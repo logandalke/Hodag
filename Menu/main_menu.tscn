@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://bi6l6a8ek6yop"]
+[gd_scene load_steps=12 format=3 uid="uid://bi6l6a8ek6yop"]
 
-[ext_resource type="PackedScene" uid="uid://c016daek5lrn8" path="res://environment.tscn" id="1_wja2v"]
+[ext_resource type="Script" path="res://Menu/main_menu.gd" id="1_tjs6m"]
+[ext_resource type="PackedScene" uid="uid://c016daek5lrn8" path="res://Environment.tscn" id="1_wja2v"]
 [ext_resource type="PackedScene" uid="uid://ci0em3chfmtod" path="res://Enviro Assets/groundandrail.tscn" id="2_tg1eo"]
 [ext_resource type="Theme" uid="uid://bc5thnpey1oaf" path="res://Menu/maintheme.tres" id="4_lggxl"]
+[ext_resource type="Texture2D" uid="uid://uuy8qgusmcnp" path="res://Menu/HODAGdropshadow.png" id="4_lrke7"]
 [ext_resource type="Shader" uid="uid://d17cwanssiofb" path="res://Menu/main_menu.tres" id="5_cgj62"]
 [ext_resource type="Shader" uid="uid://ccgonjaxdvnt3" path="res://Menu/drop_shadow.tres" id="5_hsgg3"]
 [ext_resource type="FontFile" uid="uid://hx7lj8hkkm5" path="res://Font/Compacta Bold.otf" id="6_gm42w"]
@@ -18,6 +20,7 @@ default_font_size = 25
 shader = ExtResource("5_cgj62")
 
 [node name="MainMenu" type="Node3D"]
+script = ExtResource("1_tjs6m")
 
 [node name="Environment" parent="." instance=ExtResource("1_wja2v")]
 
@@ -36,7 +39,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="Camera3D/Control2"]
-layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -48,9 +50,10 @@ offset_right = 130.0
 offset_bottom = 34.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("4_lrke7")
+ignore_texture_size = true
 
 [node name="CenterContainer" type="CenterContainer" parent="Camera3D/Control2"]
-layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
@@ -64,26 +67,22 @@ grow_vertical = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="Camera3D/Control2/CenterContainer"]
 self_modulate = Color(1, 1, 1, 0)
-layout_mode = 2
 offset_left = 148.0
 offset_top = 23.0
 offset_right = 278.0
 offset_bottom = 58.0
 
 [node name="MarginContainer" type="MarginContainer" parent="Camera3D/Control2/CenterContainer/PanelContainer"]
-layout_mode = 2
 offset_right = 130.0
 offset_bottom = 35.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Camera3D/Control2/CenterContainer/PanelContainer/MarginContainer"]
-layout_mode = 2
 offset_right = 130.0
 offset_bottom = 35.0
 theme = ExtResource("4_lggxl")
 
 [node name="Label" type="Label" parent="Camera3D/Control2/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 material = SubResource("ShaderMaterial_ufu68")
-layout_mode = 2
 offset_right = 130.0
 offset_bottom = 35.0
 theme = SubResource("Theme_d5px2")
@@ -102,26 +101,22 @@ grow_vertical = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="Camera3D/CenterContainer2"]
 self_modulate = Color(1, 1, 1, 0)
-layout_mode = 2
 offset_left = 148.0
 offset_top = 23.0
 offset_right = 278.0
 offset_bottom = 58.0
 
 [node name="MarginContainer" type="MarginContainer" parent="Camera3D/CenterContainer2/PanelContainer"]
-layout_mode = 2
 offset_right = 130.0
 offset_bottom = 35.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Camera3D/CenterContainer2/PanelContainer/MarginContainer"]
-layout_mode = 2
 offset_right = 130.0
 offset_bottom = 35.0
 theme = ExtResource("4_lggxl")
 
 [node name="Label" type="Label" parent="Camera3D/CenterContainer2/PanelContainer/MarginContainer/VBoxContainer"]
 material = SubResource("ShaderMaterial_givxw")
-layout_mode = 2
 offset_right = 130.0
 offset_bottom = 35.0
 theme = SubResource("Theme_d5px2")
