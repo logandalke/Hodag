@@ -405,7 +405,7 @@ libraries = {
 target_position = Vector3(0, 0, -100)
 
 [node name="InteractionRayCast3D" type="RayCast3D" parent="Camera3D"]
-target_position = Vector3(0, 0, -100)
+target_position = Vector3(0, 0, -2.5)
 collide_with_areas = true
 collide_with_bodies = false
 

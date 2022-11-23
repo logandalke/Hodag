@@ -1,9 +1,9 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1669070145
+::res://::1669193284
 bloodground.png::CompressedTexture2D::4450859240655606780::1668406080::1669070148::1::::<><>::
 bloodgroundclipped.png::CompressedTexture2D::4502629813043009898::1668406080::1669070148::1::::<><>::
 EnviroFinal.gd::GDScript::-1::1668406080::0::1::::<>Node<>::
-EnviroFinal.tscn::PackedScene::2481624853855907082::1668667617::0::1::::<><>::res://EnviroFinal.gd<>uid://ci0em3chfmtod<>uid://dqk7ag73vc6l5<>uid://c016daek5lrn8<>uid://8cb83a47bsoe<>uid://cc5r0uv8hvb4b<>uid://bm7riv8330lcl<>uid://temff1hlxwl4<>uid://dclgtyci50yxe<>uid://doqmhrgtavfq0
+EnviroFinal.tscn::PackedScene::2481624853855907082::1669192145::0::1::::<><>::res://EnviroFinal.gd<>uid://ci0em3chfmtod<>uid://dqk7ag73vc6l5<>uid://c016daek5lrn8<>uid://8cb83a47bsoe<>uid://cc5r0uv8hvb4b<>uid://btnyhvt35440j<>uid://qctmgou87dsi<>uid://brjwjpkqxk41m<>uid://doqmhrgtavfq0
 Environment.tscn::PackedScene::6583123870774155415::1668490875::0::1::::<><>::uid://cc5r0uv8hvb4b<>uid://b4lki4hdk1it0<>uid://cwp705lr46gx7<>uid://dauy2osc7ow8f<>uid://du0viikdv1nbx<>uid://dmyxlwx345qxl<>uid://bqyf141ef1tsv<>uid://c7noxpuh7bacd<>uid://coeuhl02pmiei<>uid://d3iy0dwggpg8y<>uid://ci2c2jacgtryj<>uid://bx6uujrbf7d4t<>uid://dih0poqsuxhp8
 export_presets.cfg::TextFile::-1::1668406080::0::1::::<><>::
 icon.png::CompressedTexture2D::8560295839409568520::1668406080::1669070148::1::::<><>::
@@ -13,14 +13,18 @@ Untitled-2.png::CompressedTexture2D::7060980444504205383::1668406080::1669070148
 Untitled-3.png::CompressedTexture2D::2543529420436735439::1668406080::1669070148::1::::<><>::
 world.gd::GDScript::-1::1668406080::0::1::::<>Node<>::
 world.tscn::PackedScene::650615925545334202::1668406080::0::1::::<><>::uid://8cb83a47bsoe<>res://world.gd<>uid://cwj3amhvlidqk<>uid://c7noxpuh7bacd<>uid://co00lv7xlf8jq
-::res://Enemies/::1668666697
+::res://Collectables/::1669191837
+spark_plugs.tscn::PackedScene::3599563075368622132::1669191794::0::1::::<><>::uid://temff1hlxwl4
+tire.tscn::PackedScene::3748316465657315927::1669191837::0::1::::<><>::uid://bm7riv8330lcl
+toolbox.tscn::PackedScene::1128325643827491336::1669191744::0::1::::<><>::uid://bm7riv8330lcl
+::res://Enemies/::1669070152
 enemy.gd::GDScript::-1::1668666697::0::1::::<>CharacterBody3D<>::
 enemy.tscn::PackedScene::6337276045069908230::1668406080::0::1::::<><>::res://Enemies/enemy.gd
 hodagapplied.gd::GDScript::-1::1668406080::0::1::::<>CharacterBody3D<>::
 hodagapplied.glb::PackedScene::7280593639922532845::1668406080::1669070152::1::::<><>::
 hodagapplied.tscn::PackedScene::5808633344206309118::1668406080::0::1::::<><>::res://Enemies/hodagapplied.gd<>uid://lm5mh5cjetvv
 HodagEmission.png::CompressedTexture2D::798693166487587483::1668406080::1669070148::1::::<><>::
-::res://Enviro Assets/::1668666697
+::res://Enviro Assets/::1669192070
 bloodgroundfulltrim.png::CompressedTexture2D::3559338827135950309::1668406080::1669070148::1::::<><>::
 box.glb::PackedScene::863459952689676242::1668406080::1669070152::1::::<><>::
 box.tscn::PackedScene::8615938146691031789::1668406080::0::1::::<><>::
@@ -33,7 +37,7 @@ groundandrail.glb::PackedScene::8202802416965654863::1668406080::1669070152::1::
 groundandrail.tscn::PackedScene::5386227331908516795::1668406080::0::1::::<><>::
 hanginglight.glb::PackedScene::4339851727968008406::1668406080::1669070151::1::::<><>::
 hanginglight.tscn::PackedScene::4066010352502331817::1668406080::0::1::::<><>::
-macguffin_shader.tres::VisualShader::3295794525987174979::1668666697::0::1::::<><>::
+macguffin_shader.tres::VisualShader::3295794525987174979::1669192069::0::1::::<><>::
 navigation_region_3d.tscn::PackedScene::3925580893973655049::1668406080::0::1::::<><>::uid://b4lki4hdk1it0<>uid://coeuhl02pmiei<>uid://cwp705lr46gx7<>uid://du0viikdv1nbx<>uid://dauy2osc7ow8f<>uid://cc5r0uv8hvb4b<>uid://d3iy0dwggpg8y<>uid://ci0em3chfmtod<>uid://dqk7ag73vc6l5<>uid://ci2c2jacgtryj<>uid://bx6uujrbf7d4t<>uid://dih0poqsuxhp8
 pine.glb::PackedScene::3886767796251483321::1668406080::1669070151::1::::<><>::
 pine.tscn::PackedScene::6349950775855695470::1668406080::0::1::::<><>::
@@ -61,13 +65,13 @@ warehousestairs.glb::PackedScene::3483508607211638260::1668406080::1669070150::1
 warehousestairs.tscn::PackedScene::5390260439080847669::1668406080::0::1::::<><>::res://Enviro Assets/warehousestairs.gd<>uid://bffmnv1ii8g6o
 woodstack.glb::PackedScene::1428688955099664561::1668406080::1669070149::1::::<><>::
 woodstack.tscn::PackedScene::4976228305426158935::1668406080::0::1::::<><>::
-::res://Font/::1668406080
+::res://Font/::1669070147
 Compacta Bold.otf::FontFile::15904873686223486::1668406080::1669070147::1::::<><>::
-::res://Hodag/::1668466515
-hodag.gd::GDScript::-1::1668466515::0::1::::<>CharacterBody3D<>::
+::res://Hodag/::1669191743
+hodag.gd::GDScript::-1::1669073070::0::1::::<>CharacterBody3D<>::
 hodag.glb::PackedScene::2914053130339149110::1668406080::1669070149::1::::<><>::
-hodag.tscn::PackedScene::8175677913577128533::1668406080::0::1::::<><>::res://Hodag/hodag.gd<>uid://lm5mh5cjetvv
-::res://Menu/::1669069729
+hodag.tscn::PackedScene::8175677913577128533::1669191743::0::1::::<><>::res://Hodag/hodag.gd<>uid://lm5mh5cjetvv
+::res://Menu/::1669191743
 blur.gdshader::Shader::-1::1668406080::0::1::::<><>::
 drop_shadow.tres::VisualShader::4926479048166135822::1668406080::0::1::::<><>::
 equipment_menu.gd::GDScript::-1::1668406080::0::1::::<>ColorRect<>::
@@ -76,27 +80,27 @@ HODAG.png::CompressedTexture2D::8528069533974129770::1668406080::1669070148::1::
 HODAGdropshadow.png::CompressedTexture2D::1446581417442765649::1668406080::1669070148::1::::<><>::
 maintheme.tres::Theme::2589896533201326157::1668406080::0::1::::<><>::uid://hx7lj8hkkm5
 main_menu.gd::GDScript::-1::1668667612::0::1::::<>Node3D<>::
-main_menu.tres::VisualShader::9050392816174178499::1668667265::0::1::::<><>::
-main_menu.tscn::PackedScene::3012650440879593507::1668669399::0::1::::<><>::res://Menu/main_menu.gd<>uid://c016daek5lrn8<>uid://ci0em3chfmtod<>uid://bc5thnpey1oaf<>uid://uuy8qgusmcnp<>uid://d17cwanssiofb<>uid://ccgonjaxdvnt3<>uid://hx7lj8hkkm5
+main_menu.tres::VisualShader::9050392816174178499::1669191702::0::1::::<><>::
+main_menu.tscn::PackedScene::3012650440879593507::1669191743::0::1::::<><>::res://Menu/main_menu.gd<>uid://c016daek5lrn8<>uid://ci0em3chfmtod<>uid://bc5thnpey1oaf<>uid://uuy8qgusmcnp<>uid://d17cwanssiofb<>uid://ccgonjaxdvnt3<>uid://hx7lj8hkkm5
 pause_menu.gd::GDScript::-1::1668406080::0::1::::<>ColorRect<>::
 pause_menu.tscn::PackedScene::4480745539056053667::1668406080::0::1::::<><>::res://Menu/blur.gdshader<>res://Menu/pause_menu.gd
 ::res://Nav Mesh/::1668406080
 navmesh.tscn::PackedScene::3689038148962914555::1668406080::0::1::::<><>::uid://b506dwkqfnl8i<>res://Enviro Assets/warehouse.gd
 new_navigation_mesh.tres::NavigationMesh::4545584192538962638::1668406080::0::1::::<><>::
-::res://Player/::1668406080
+::res://Player/::1669191744
 Camera2.gd::GDScript::-1::1668406080::0::1::::<>Camera3D<>::
-player.gd::GDScript::-1::1668406080::0::1::::<>CharacterBody3D<>::
+player.gd::GDScript::-1::1669108999::0::1::::<>CharacterBody3D<>::
 player.gdshader::Shader::-1::1668406080::0::1::::<><>::
-player.tscn::PackedScene::2320481715769070928::1668406080::0::1::::<><>::res://Player/player.gd<>uid://c7unk0v2rqh48<>uid://cdtfesrglvg5y<>uid://b43rhvnfi8ajj<>uid://cbfi80pixlp6l<>uid://ckvryps0currj<>uid://3p6yfneudusq
+player.tscn::PackedScene::2320481715769070928::1669191744::0::1::::<><>::res://Player/player.gd<>uid://c7unk0v2rqh48<>uid://cdtfesrglvg5y<>uid://b43rhvnfi8ajj<>uid://cbfi80pixlp6l<>uid://ckvryps0currj<>uid://3p6yfneudusq
 test.gd::GDScript::-1::1668406080::0::1::::<>SubViewport<>::
-::res://Player/Gun/::1668406080
+::res://Player/Gun/::1669070149
 128299__xenonn__layered-gunshot-5.wav::AudioStreamWAV::1998178656913099484::1668406080::1669070148::1::::<><>::
 bullet_hole.gd::GDScript::-1::1668406080::0::1::::<>Node3D<>::
 bullet_hole.tscn::PackedScene::1214597116858301612::1668406080::0::1::::<><>::res://Player/Gun/bullet_hole.gd<>uid://dln6yh4tegfdy
 gun.gd::GDScript::-1::1668406080::0::1::::<>Node3D<>::
 gun.glb::PackedScene::5022942775737010180::1668406080::1669070149::1::::<><>::
 gunsmoke.png::CompressedTexture2D::4853898103586016365::1668406080::1669070148::1::::<><>::
-::res://Sprites/::1668406080
+::res://Sprites/::1669070148
 flash2.png::CompressedTexture2D::4272261225799138110::1668406080::1669070148::1::::<><>::
 flash3.png::CompressedTexture2D::5519157601328624879::1668406080::1669070148::1::::<><>::
 flash4.png::CompressedTexture2D::3476404820629453259::1668406080::1669070148::1::::<><>::

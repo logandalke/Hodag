@@ -21,6 +21,7 @@ var speed = 5.0
 const jump_velocity = 4.5
 
 var collectable_count = 0
+var true_ending = false
 
 # Get the gravity from the project settings to be synced with RigidDynamicBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -107,6 +108,18 @@ func _process(delta):
 				print("Interaction success")
 				collider.get_parent().queue_free()
 				collectable_count += 1
+			if collider.is_in_group("true_ending"):
+				print("True ending success")
+				collider.get_parent().queue_free()
+				true_ending = true
+				pass
+			if collider.is_in_group("goal"):
+				if collectable_count == 3:
+					if true_ending == true:
+						pass
+					pass
+				else:
+					pass
 
 func _physics_process(delta):
 	# Add the gravity.
