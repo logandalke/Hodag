@@ -1,10 +1,18 @@
-res://Menu/main_menu.tscn
-res://Enviro Assets/macguffin_shader.tres
+res://Menu/good_ending.tscn
 res://Menu/main_menu.tres
-res://EnviroFinal.tscn
+res://Menu/ending.gd
+res://Menu/bad_ending.tscn
+res://Menu/death_ending.tscn
 res://Player/player.tscn
 res://Menu/loading_screen.tscn
-res://Menu/bad_ending.tscn
-res://Menu/good_ending.tscn
-res://Menu/death_ending.tscn
+res://Menu/main_menu.tscn
+res://Menu/screen_fade.tscn
+res://Menu/main_menu.gd
+res://Menu/screen_fade.gd
+res://Enviro Assets/macguffin_shader.tres
+res://EnviroFinal.tscn
+res://EnviroFinal.gd
+res://Player/player.gd
+res://Menu/screen_fade_out.tscn
 res://Environment.tscn
+res://Menu/premise.tscn

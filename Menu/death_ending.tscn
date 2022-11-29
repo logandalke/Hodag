@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcfvmfsx2bt2t"]
+[gd_scene load_steps=7 format=3 uid="uid://dcfvmfsx2bt2t"]
 
+[ext_resource type="Script" path="res://Menu/ending.gd" id="1_eur20"]
 [ext_resource type="Theme" uid="uid://bc5thnpey1oaf" path="res://Menu/maintheme.tres" id="1_fg2v6"]
 [ext_resource type="Shader" uid="uid://d17cwanssiofb" path="res://Menu/main_menu.tres" id="2_aicc0"]
 [ext_resource type="FontFile" uid="uid://hx7lj8hkkm5" path="res://Font/Compacta Bold.otf" id="3_yoc30"]
@@ -18,9 +19,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_eur20")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -29,7 +30,6 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
-layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -45,7 +45,6 @@ theme = ExtResource("1_fg2v6")
 
 [node name="Label" type="Label" parent="VBoxContainer2"]
 material = SubResource("ShaderMaterial_1eowr")
-layout_mode = 2
 offset_right = 423.0
 offset_bottom = 140.0
 theme = SubResource("Theme_7r2bi")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bbmd87t1ojuic"]
+[gd_scene load_steps=13 format=3 uid="uid://bbmd87t1ojuic"]
 
 [ext_resource type="Script" path="res://EnviroFinal.gd" id="1_1rh3x"]
 [ext_resource type="PackedScene" uid="uid://ci0em3chfmtod" path="res://Enviro Assets/groundandrail.tscn" id="1_bc7gk"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://btnyhvt35440j" path="res://Collectables/tire.tscn" id="8_21leu"]
 [ext_resource type="PackedScene" uid="uid://qctmgou87dsi" path="res://Collectables/toolbox.tscn" id="9_eoxvd"]
 [ext_resource type="PackedScene" uid="uid://brjwjpkqxk41m" path="res://Collectables/spark_plugs.tscn" id="10_dngkj"]
+[ext_resource type="PackedScene" uid="uid://dxvxfb3d53etd" path="res://Menu/screen_fade_out.tscn" id="12_mcjat"]
 [ext_resource type="PackedScene" uid="uid://doqmhrgtavfq0" path="res://Hodag/hodag.tscn" id="19_wv2bf"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_wo3lm"]
@@ -22,6 +23,7 @@ script = ExtResource("1_1rh3x")
 [node name="Environment" parent="." instance=ExtResource("2_f82u6")]
 
 [node name="Player" parent="." instance=ExtResource("6_8m2pj")]
+transform = Transform3D(0.430574, 0, 0.902555, 0, 1, 0, -0.902555, 0, 0.430574, -48.2243, 0.525834, 49.7036)
 
 [node name="Nav" type="Node3D" parent="."]
 transform = Transform3D(0.39, 0, 0, 0, 0.39, 0, 0, 0, 0.39, 0, 0.210289, 0)
@@ -69,3 +71,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0021, 4.12579, 47.8951)
 [node name="Toolbox" parent="MacGuffins" instance=ExtResource("9_eoxvd")]
 
 [node name="SparkPlugs" parent="MacGuffins" instance=ExtResource("10_dngkj")]
+
+[node name="ScreenFadeOut" parent="." instance=ExtResource("12_mcjat")]
+
+[connection signal="child_exiting_tree" from="ScreenFadeOut" to="." method="_on_screen_fade_out_child_exiting_tree"]
+[connection signal="tree_exited" from="ScreenFadeOut" to="." method="_on_screen_fade_out_tree_exited"]

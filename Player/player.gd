@@ -7,6 +7,7 @@ var health = 50
 
 var can_fire = true
 var is_aiming = false
+var first_shot = true
 
 @export var ads_aim : Vector3
 @export var ads_default : Vector3
@@ -45,6 +46,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	aim_position = raycast.transform.origin
+	gunsmoke.visible = true
+	gunsmoke.visible = false
 
 # Sets input 
 func _unhandled_input(event):
@@ -66,7 +69,7 @@ func _process(delta):
 
 	aim_random()
 
-	if Input.is_action_just_pressed("attack") and can_fire:
+	if Input.is_action_just_pressed("attack") and can_fire and not first_shot:
 		if clip_size > 0:
 			print("fire!")
 			clip_size -= 1
@@ -85,6 +88,12 @@ func _process(delta):
 			can_fire = true
 		elif clip_size <= 0:
 			empty_sound.play()
+	
+	if Input.is_action_just_pressed("attack") and first_shot:
+		first_shot = false
+		gunsmoke.visible = true
+		gunsmoke.visible = false
+		pass
 
 	if Input.is_action_pressed("aim") and not animation_player.current_animation == "aim_fire" and not animation_player.current_animation == "fire":
 		speed = 1
