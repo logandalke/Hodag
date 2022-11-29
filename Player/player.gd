@@ -7,7 +7,7 @@ var health = 50
 
 var can_fire = true
 var is_aiming = false
-var first_shot = true
+var first_shot = false
 
 @export var ads_aim : Vector3
 @export var ads_default : Vector3
@@ -21,8 +21,8 @@ var aim_position
 var speed = 5.0
 const jump_velocity = 4.5
 
-var collectable_count = 0
-var true_ending = false
+var collectable_count = 3
+var true_ending = true
 
 # Get the gravity from the project settings to be synced with RigidDynamicBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -121,14 +121,15 @@ func _process(delta):
 				print("True ending success")
 				collider.get_parent().queue_free()
 				true_ending = true
-				pass
 			if collider.is_in_group("goal"):
 				if collectable_count == 3:
 					if true_ending == true:
-						pass
-					pass
-				else:
-					pass
+						health = 9999
+						get_tree().change_scene_to_file("res://Menu/good_ending.tscn")
+						print("good ending")
+					else:
+						health = 9999
+						get_tree().change_scene_to_file("res://Menu/bad_ending.tscn")
 
 func _physics_process(delta):
 	# Add the gravity.

@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://b4kivnqecc6pk"]
+[gd_scene load_steps=9 format=3 uid="uid://b4kivnqecc6pk"]
 
-[ext_resource type="Script" path="res://Menu/ending.gd" id="1_3mbse"]
+[ext_resource type="Script" path="res://Menu/premise.gd" id="1_yduh3"]
 [ext_resource type="Theme" uid="uid://bc5thnpey1oaf" path="res://Menu/maintheme.tres" id="2_30yob"]
 [ext_resource type="Shader" uid="uid://d17cwanssiofb" path="res://Menu/main_menu.tres" id="3_nonpl"]
 [ext_resource type="FontFile" uid="uid://hx7lj8hkkm5" path="res://Font/Compacta Bold.otf" id="4_f6m3a"]
+[ext_resource type="PackedScene" uid="uid://ccd5jmrg2q1qn" path="res://Menu/screen_fade.tscn" id="5_b85u7"]
+[ext_resource type="PackedScene" uid="uid://dxvxfb3d53etd" path="res://Menu/screen_fade_out.tscn" id="6_3vsqk"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1eowr"]
 shader = ExtResource("3_nonpl")
@@ -19,7 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_3mbse")
+script = ExtResource("1_yduh3")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -49,11 +51,15 @@ offset_right = 423.0
 offset_bottom = 210.0
 theme = SubResource("Theme_7r2bi")
 text = "Your truck has broken down in the forest.
-You need a new tire and spark plugs,
- as well as some tools to fix your vehicle.
-Find all 3 and get back to the truck safely.
-Something stirs in the distance, 
-so you grab your pistol."
+You need a new tire, spark plugs, and some
+tools to fix your vehicle. Find all 3 and get
+back to the truck safely. You hear an
+inhuman sound and, keeping in mind you 
+only  have 6 rounds, you bring your pistol."
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
+
+[node name="ScreenFade" parent="." instance=ExtResource("5_b85u7")]
+
+[node name="ScreenFadeOut" parent="." instance=ExtResource("6_3vsqk")]

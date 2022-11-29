@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dcfvmfsx2bt2t"]
+[gd_scene load_steps=9 format=3 uid="uid://dcfvmfsx2bt2t"]
 
 [ext_resource type="Script" path="res://Menu/ending.gd" id="1_eur20"]
 [ext_resource type="Theme" uid="uid://bc5thnpey1oaf" path="res://Menu/maintheme.tres" id="1_fg2v6"]
 [ext_resource type="Shader" uid="uid://d17cwanssiofb" path="res://Menu/main_menu.tres" id="2_aicc0"]
 [ext_resource type="FontFile" uid="uid://hx7lj8hkkm5" path="res://Font/Compacta Bold.otf" id="3_yoc30"]
+[ext_resource type="PackedScene" uid="uid://ccd5jmrg2q1qn" path="res://Menu/screen_fade.tscn" id="5_uuj7f"]
+[ext_resource type="PackedScene" uid="uid://dxvxfb3d53etd" path="res://Menu/screen_fade_out.tscn" id="6_dw443"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1eowr"]
 shader = ExtResource("2_aicc0")
@@ -55,3 +57,7 @@ evidence of your existence."
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
+
+[node name="ScreenFade" parent="." instance=ExtResource("5_uuj7f")]
+
+[node name="ScreenFadeOut" parent="." instance=ExtResource("6_dw443")]

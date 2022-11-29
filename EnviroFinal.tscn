@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://dqk7ag73vc6l5" path="res://Enviro Assets/warehouse.tscn" id="1_l44gi"]
 [ext_resource type="PackedScene" uid="uid://c016daek5lrn8" path="res://Environment.tscn" id="2_f82u6"]
 [ext_resource type="PackedScene" uid="uid://8cb83a47bsoe" path="res://Player/player.tscn" id="6_8m2pj"]
-[ext_resource type="PackedScene" uid="uid://cc5r0uv8hvb4b" path="res://Enviro Assets/woodstack.tscn" id="7_b2mxf"]
 [ext_resource type="PackedScene" uid="uid://btnyhvt35440j" path="res://Collectables/tire.tscn" id="8_21leu"]
 [ext_resource type="PackedScene" uid="uid://qctmgou87dsi" path="res://Collectables/toolbox.tscn" id="9_eoxvd"]
+[ext_resource type="PackedScene" uid="uid://bdnpghqfavl3n" path="res://Enviro Assets/tablet.tscn" id="10_01hd8"]
 [ext_resource type="PackedScene" uid="uid://brjwjpkqxk41m" path="res://Collectables/spark_plugs.tscn" id="10_dngkj"]
 [ext_resource type="PackedScene" uid="uid://dxvxfb3d53etd" path="res://Menu/screen_fade_out.tscn" id="12_mcjat"]
 [ext_resource type="PackedScene" uid="uid://doqmhrgtavfq0" path="res://Hodag/hodag.tscn" id="19_wv2bf"]
@@ -39,10 +39,6 @@ transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, -1.08
 
 [node name="warehouse" parent="Nav/NavigationRegion3D/Terrain" instance=ExtResource("1_l44gi")]
 
-[node name="woodstack16" parent="Nav/NavigationRegion3D/Terrain/warehouse" instance=ExtResource("7_b2mxf")]
-transform = Transform3D(-8.10576e-08, -1.183e-10, 5.999, -0.347461, 3.84185, -4.95643e-08, -1.80995, -0.737529, -2.59147e-07, -1.13547, 25.1092, 8.44316)
-visible = false
-
 [node name="hodag" parent="." node_paths=PackedStringArray("target_location") instance=ExtResource("19_wv2bf")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 6.72196, -15.4576)
 target_location = NodePath("../Player")
@@ -71,6 +67,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0021, 4.12579, 47.8951)
 [node name="Toolbox" parent="MacGuffins" instance=ExtResource("9_eoxvd")]
 
 [node name="SparkPlugs" parent="MacGuffins" instance=ExtResource("10_dngkj")]
+
+[node name="tablet" parent="MacGuffins" instance=ExtResource("10_01hd8")]
+transform = Transform3D(0.376263, 0.123974, -0.352074, -0.0884842, 0.515288, 0.0868823, 0.362624, -0.00290119, 0.386516, 20.3756, 12.8631, 35.4716)
 
 [node name="ScreenFadeOut" parent="." instance=ExtResource("12_mcjat")]
 

@@ -1,3 +1,5 @@
+CollisionShape3D
+Area3D
 AnimationPlayer
 ColorRect
 Container
@@ -7,5 +9,3 @@ VBoxContainer
 Control
 BoxContainer
 CenterContainer
-CollisionShape3D
-Area3D
