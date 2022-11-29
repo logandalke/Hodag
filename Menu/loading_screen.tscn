@@ -1,0 +1,106 @@
+[gd_scene load_steps=9 format=3 uid="uid://c72pfgn867adr"]
+
+[ext_resource type="Theme" uid="uid://bc5thnpey1oaf" path="res://Menu/maintheme.tres" id="1_cl5si"]
+[ext_resource type="Shader" uid="uid://ccgonjaxdvnt3" path="res://Menu/drop_shadow.tres" id="2_cq8kg"]
+[ext_resource type="FontFile" uid="uid://hx7lj8hkkm5" path="res://Font/Compacta Bold.otf" id="3_rhocm"]
+[ext_resource type="Shader" uid="uid://d17cwanssiofb" path="res://Menu/main_menu.tres" id="4_0f8tu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uhl00"]
+shader = ExtResource("2_cq8kg")
+
+[sub_resource type="Theme" id="Theme_8ahg4"]
+default_font = ExtResource("3_rhocm")
+default_font_size = 25
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_no4bi"]
+shader = ExtResource("4_0f8tu")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gb0na"]
+shader = ExtResource("4_0f8tu")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -43.0
+offset_top = 2.0
+offset_right = 47.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_cl5si")
+
+[node name="Label" type="Label" parent="Control/VBoxContainer"]
+material = SubResource("ShaderMaterial_uhl00")
+offset_right = 90.0
+offset_bottom = 35.0
+theme = SubResource("Theme_8ahg4")
+text = "Loading..."
+uppercase = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_cl5si")
+
+[node name="Label" type="Label" parent="Control/VBoxContainer2"]
+material = SubResource("ShaderMaterial_no4bi")
+offset_right = 89.0
+offset_bottom = 35.0
+theme = SubResource("Theme_8ahg4")
+text = "Loading..."
+uppercase = true
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -62.0
+offset_top = 12.0
+offset_right = 62.0
+offset_bottom = 25.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer3"]
+offset_right = 124.0
+offset_bottom = 13.0
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Control"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -60.0
+offset_top = 14.0
+offset_right = 60.0
+offset_bottom = 23.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer4"]
+material = SubResource("ShaderMaterial_gb0na")
+offset_right = 120.0
+offset_bottom = 9.0
+size_flags_vertical = 3
+color = Color(1, 0.0196078, 0, 1)

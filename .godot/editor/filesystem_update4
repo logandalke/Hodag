@@ -1,9 +1,10 @@
-res://Collectables/toolbox.tscn
+res://Menu/main_menu.tscn
 res://Enviro Assets/macguffin_shader.tres
 res://Menu/main_menu.tres
 res://EnviroFinal.tscn
-res://Hodag/hodag.tscn
-res://Menu/main_menu.tscn
 res://Player/player.tscn
-res://Collectables/spark_plugs.tscn
-res://Collectables/tire.tscn
+res://Menu/loading_screen.tscn
+res://Menu/bad_ending.tscn
+res://Menu/good_ending.tscn
+res://Menu/death_ending.tscn
+res://Environment.tscn

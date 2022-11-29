@@ -1,2 +1,10 @@
+ColorRect
+Container
+HBoxContainer
+TabBar
+VBoxContainer
+Control
+BoxContainer
+CenterContainer
 CollisionShape3D
 Area3D

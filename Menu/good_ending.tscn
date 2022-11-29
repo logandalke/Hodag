@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfe20ffxgi24d"]
+
+[ext_resource type="Theme" uid="uid://bc5thnpey1oaf" path="res://Menu/maintheme.tres" id="1_ilqc4"]
+[ext_resource type="Shader" uid="uid://d17cwanssiofb" path="res://Menu/main_menu.tres" id="2_k5dr8"]
+[ext_resource type="FontFile" uid="uid://hx7lj8hkkm5" path="res://Font/Compacta Bold.otf" id="3_cxtwc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1eowr"]
+shader = ExtResource("2_k5dr8")
+
+[sub_resource type="Theme" id="Theme_7r2bi"]
+default_font = ExtResource("3_cxtwc")
+default_font_size = 25
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -211.5
+offset_top = -72.0
+offset_right = 211.5
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ilqc4")
+
+[node name="Label" type="Label" parent="VBoxContainer2"]
+material = SubResource("ShaderMaterial_1eowr")
+layout_mode = 2
+offset_right = 423.0
+offset_bottom = 175.0
+theme = SubResource("Theme_7r2bi")
+text = "You survived. You made it back to town
+and lived to tell the tale.
+the artifact you brought back with you
+served as proof of the Hodags existence.
+Further investigations are ongoing."
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
