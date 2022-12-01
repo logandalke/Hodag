@@ -10,7 +10,7 @@ var message_read = false
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	$ScreenFadeOut.transition_clear()
-	await get_tree().create_timer(1.5).timeout
+	await get_tree().create_timer(1).timeout
 	$ScreenFadeOut.queue_free()
 
 

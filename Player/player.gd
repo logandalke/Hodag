@@ -38,7 +38,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var empty_sound = $AudioStreamPlayer2
 @onready var gunsmoke = $Camera3D/gun/Gunsmoke
 @onready var smoke_animation_player = $Camera3D/gun/Gunsmoke/AnimationPlayer
-
+@onready var screen_blood = $Camera3D/Control/Blood
 @onready var bullet_hole = preload("res://Player/Gun/bullet_hole.tscn")
 
 
@@ -63,9 +63,11 @@ func _unhandled_input(event):
 func _process(delta):
 
 
-	if health <= 0:
+	if health <= 25:
+		screen_blood.visible = true
+		if health <= 0:
 #		$PauseMenu.pause()
-		get_tree().change_scene_to_file("res://Menu/main_menu.tscn")
+			get_tree().change_scene_to_file("res://Menu/death_ending.tscn")
 
 	aim_random()
 

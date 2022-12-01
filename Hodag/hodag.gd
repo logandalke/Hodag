@@ -113,7 +113,7 @@ func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "attack":
 		for body in hitbox.get_overlapping_bodies():
 			if body.is_in_group("player"):
-				body.health -= 50
+				body.health -= 25
 		speed = 5
 	pass # Replace with function body.
 

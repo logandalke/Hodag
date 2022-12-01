@@ -1,18 +1,9 @@
-res://Menu/premise.tscn
+res://Menu/death_ending.tscn
 res://Menu/main_menu.tres
 res://Enviro Assets/macguffin_shader.tres
-res://Menu/ending.gd
-res://Menu/main_menu.gd
-res://Player/player.tscn
-res://Menu/loading_screen.tscn
 res://Menu/main_menu.tscn
-res://EnviroFinal.tscn
-res://Menu/premise.gd
 res://Player/player.gd
-res://Enviro Assets/truck.tscn
-res://Collectables/spark_plugs.tscn
-res://Environment.tscn
-res://Menu/good_ending.tscn
-res://Menu/bad_ending.tscn
-res://Menu/death_ending.tscn
-res://Enviro Assets/tablet.tscn
+res://Hodag/hodag.gd
+res://Player/player.tscn
+res://Player/damaged.tres
+res://EnviroFinal.gd
