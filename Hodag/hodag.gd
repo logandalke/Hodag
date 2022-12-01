@@ -112,8 +112,11 @@ func damaged():
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "attack":
 		for body in hitbox.get_overlapping_bodies():
-			if body.is_in_group("player"):
+			if body.is_in_group("player") and body.vulnerable == true:
 				body.health -= 25
+				body.vulnerable = false
+				await get_tree().create_timer(3).timeout
+				body.vulnerable = true
 		speed = 5
 	pass # Replace with function body.
 

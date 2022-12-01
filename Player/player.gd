@@ -5,6 +5,7 @@ var health = 50
 @export var fire_rate = 1.5
 @export var clip_size = 6
 
+var vulnerable = true
 var can_fire = true
 var is_aiming = false
 var first_shot = false
@@ -21,8 +22,8 @@ var aim_position
 var speed = 5.0
 const jump_velocity = 4.5
 
-var collectable_count = 3
-var true_ending = true
+var collectable_count = 0
+var true_ending = false
 
 # Get the gravity from the project settings to be synced with RigidDynamicBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
