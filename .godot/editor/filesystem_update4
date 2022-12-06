@@ -1,10 +1,10 @@
-res://EnviroFinal.tscn
+res://Environment.tscn
 res://Menu/main_menu.tres
 res://Enviro Assets/macguffin_shader.tres
 res://Menu/death_ending.tscn
 res://Menu/main_menu.tscn
 res://Player/player.tscn
-res://EnviroFinal.gd
+res://EnviroFinal.tscn
 res://Player/player.gd
 res://Hodag/hodag.gd
-res://new_audio_stream_wav.tres
+res://Hodag/hodag.tscn

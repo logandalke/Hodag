@@ -37,6 +37,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var reticle = $Camera3D/Control/TextureRect
 @onready var shot_sound = $AudioStreamPlayer
 @onready var empty_sound = $AudioStreamPlayer2
+@onready var damage_sound = $AudioStreamPlayer3
+@onready var pickup_sound = $AudioStreamPlayer4
 @onready var gunsmoke = $Camera3D/gun/Gunsmoke
 @onready var smoke_animation_player = $Camera3D/gun/Gunsmoke/AnimationPlayer
 @onready var screen_blood = $Camera3D/Control/Blood
@@ -120,10 +122,12 @@ func _process(delta):
 				print("Interaction success")
 				collider.get_parent().queue_free()
 				collectable_count += 1
+				pickup_sound.play()
 			if collider.is_in_group("true_ending"):
 				print("True ending success")
 				collider.get_parent().queue_free()
 				true_ending = true
+				pickup_sound.play()
 			if collider.is_in_group("goal"):
 				if collectable_count == 3:
 					if true_ending == true:

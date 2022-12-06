@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://8cb83a47bsoe"]
+[gd_scene load_steps=24 format=3 uid="uid://8cb83a47bsoe"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_wqsqa"]
 [ext_resource type="Texture2D" uid="uid://c7unk0v2rqh48" path="res://Untitled-2.png" id="2_7h7t1"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b5fdwjnepa6b3" path="res://bloodgroundclipped.png" id="5_nbw5f"]
 [ext_resource type="Texture2D" uid="uid://ckvryps0currj" path="res://Sprites/flash3.png" id="5_nmn6q"]
 [ext_resource type="AudioStream" uid="uid://3p6yfneudusq" path="res://Player/Gun/128299__xenonn__layered-gunshot-5.wav" id="6_a86o7"]
+[ext_resource type="AudioStream" uid="uid://b01bd6xfbfvld" path="res://Player/player_damage.wav" id="9_11n7d"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_bje5y"]
 
@@ -424,6 +425,7 @@ mouse_filter = 2
 [node name="TextureRect" type="TextureRect" parent="Camera3D/Control"]
 texture_filter = 2
 material = SubResource("CanvasItemMaterial_ghja3")
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -445,6 +447,7 @@ visible = false
 modulate = Color(1, 0.027451, 0, 0.121569)
 show_behind_parent = true
 material = SubResource("CanvasItemMaterial_stitd")
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -483,5 +486,15 @@ pitch_scale = 1.12
 stream = ExtResource("6_a86o7")
 volume_db = -2.0
 pitch_scale = 50.0
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_11n7d")
+volume_db = 5.0
+pitch_scale = 0.85
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_a86o7")
+volume_db = -2.0
+pitch_scale = 20.0
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

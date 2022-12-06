@@ -31,6 +31,11 @@ extends CharacterBody3D
 @onready var animation_player = $AnimationPlayer
 @onready var collision = $CollisionShape3d
 @onready var hitbox = $Hitbox
+@onready var hodag_sound1 = $AudioStreamPlayer3D
+@onready var hodag_sound2 = $AudioStreamPlayer3D2
+@onready var hodag_sound3 = $AudioStreamPlayer3D4
+@onready var damage_sound = $AudioStreamPlayer3D3
+@onready var audio_timer = $AudioTimer
 @onready var spawn_point1 = get_parent().get_node("SpawnPoints").get_child(0).global_position
 @onready var spawn_point2 = get_parent().get_node("SpawnPoints").get_child(1).global_position
 @onready var spawn_point3 = get_parent().get_node("SpawnPoints").get_child(2).global_position
@@ -38,11 +43,12 @@ extends CharacterBody3D
 @onready var spawn_point5 = get_parent().get_node("SpawnPoints").get_child(4).global_position
 
 
-
+var sound_array = []
 var spawn_points = PackedVector3Array()
 
 var speed = 5
 var vulnerable = true
+var attacking_audio_okay = true
 
 func _ready():
 	spawn_points.append(spawn_point1)
@@ -50,10 +56,16 @@ func _ready():
 	spawn_points.append(spawn_point3)
 	spawn_points.append(spawn_point4)
 	spawn_points.append(spawn_point5)
-
+	sound_array.append(hodag_sound1)
+	sound_array.append(hodag_sound2)
+	sound_array.append(hodag_sound3)
+	sound_array.append(damage_sound)
+	audio_timer.start()
+	
 func _process(delta):
 	find_target()
 	stuck_check()
+	
 	if speed > 3:
 		animation_player.play("walk")
 #	print(spawn_points)
@@ -92,12 +104,18 @@ func _on_navigation_agent_3d_target_reached():
 	if vulnerable == true:
 		speed = 3
 		animation_player.play("attack")
+		if attacking_audio_okay == true:
+			var audio = randi_range(0,3)
+			var rand_sound = sound_array[audio]
+			rand_sound.play()
+			attacking_audio_okay = false
 
 func damaged():
 	if vulnerable == true:
 		vulnerable = false
 		collision.disabled = true
 		speed = 0
+		damage_sound.play()
 	#	animation_player.stop()
 		animation_player.play("hit")
 		await get_tree().create_timer(6).timeout
@@ -107,17 +125,29 @@ func damaged():
 		collision.disabled = false
 		speed = 5
 
-
+func hodag_cries():
+	if vulnerable:
+		var audio = randi_range(0,2)
+		var rand_sound = sound_array[audio]
+		rand_sound.play()
 
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "attack":
 		for body in hitbox.get_overlapping_bodies():
 			if body.is_in_group("player") and body.vulnerable == true:
 				body.health -= 25
+				body.damage_sound.play()
 				body.vulnerable = false
 				await get_tree().create_timer(3).timeout
 				body.vulnerable = true
 		speed = 5
+		attacking_audio_okay = true
 	pass # Replace with function body.
 
 
+
+
+func _on_audio_timer_timeout():
+	hodag_cries()
+	audio_timer.start()
+	pass # Replace with function body.
