@@ -137,6 +137,7 @@ func _on_animation_player_animation_finished(anim_name):
 			if body.is_in_group("player") and body.vulnerable == true:
 				body.health -= 25
 				body.damage_sound.play()
+				body.animation_player.play("damage_shake")
 				body.vulnerable = false
 				await get_tree().create_timer(3).timeout
 				body.vulnerable = true

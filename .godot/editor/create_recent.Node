@@ -1,6 +1,6 @@
-Timer
 AudioStreamPlayer3D
 AudioStreamPlayer
+Timer
 TextureRect
 CollisionShape3D
 Area3D

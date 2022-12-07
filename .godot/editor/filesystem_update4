@@ -1,10 +1,12 @@
-res://Environment.tscn
+res://Enviro Assets/warehouse.tscn
 res://Menu/main_menu.tres
 res://Enviro Assets/macguffin_shader.tres
+res://Enviro Assets/warehouse.gd
 res://Menu/death_ending.tscn
 res://Menu/main_menu.tscn
 res://Player/player.tscn
 res://EnviroFinal.tscn
+res://Enviro Assets/warehousestairs.tscn
+res://Enviro Assets/warehousestairs.gd
 res://Player/player.gd
 res://Hodag/hodag.gd
-res://Hodag/hodag.tscn
