@@ -1,7 +1,15 @@
+Camera3D
+SubViewport
+SubViewportContainer
+Label
+CenterContainer
+HSplitContainer
+VBoxContainer
+VSplitContainer
+TextureRect
 AudioStreamPlayer3D
 AudioStreamPlayer
 Timer
-TextureRect
 CollisionShape3D
 Area3D
 AnimationPlayer
@@ -9,7 +17,5 @@ ColorRect
 Container
 HBoxContainer
 TabBar
-VBoxContainer
 Control
 BoxContainer
-CenterContainer

@@ -92,7 +92,7 @@ normal_fade = 0.063
 upper_fade = 0.00160082
 
 [node name="CPUParticles3D" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93606, 177.616, -145.772)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93606, 180.483, -145.772)
 amount = 7200
 lifetime = 10.0
 preprocess = 5.0
@@ -106,7 +106,7 @@ scale_amount_min = 0.25
 scale_amount_max = 0.25
 
 [node name="CPUParticles3D2" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93606, 177.616, 197.635)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93606, 180.483, 197.635)
 amount = 4800
 lifetime = 10.0
 preprocess = 5.0
@@ -120,7 +120,7 @@ scale_amount_min = 0.25
 scale_amount_max = 0.25
 
 [node name="CPUParticles3D3" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -156.267, 177.616, 48.5476)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -156.267, 180.483, 48.5476)
 amount = 800
 lifetime = 10.0
 preprocess = 5.0
@@ -134,7 +134,7 @@ scale_amount_min = 0.25
 scale_amount_max = 0.25
 
 [node name="CPUParticles3D4" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 158.882, 177.616, 48.5476)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 158.882, 180.483, 48.5476)
 amount = 800
 lifetime = 10.0
 preprocess = 5.0
@@ -148,7 +148,7 @@ scale_amount_min = 0.25
 scale_amount_max = 0.25
 
 [node name="CPUParticles3D5" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.27318, 176.988, 56.6752)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.27318, 180.483, 56.6752)
 amount = 192
 lifetime = 8.0
 preprocess = 5.0
@@ -162,7 +162,7 @@ scale_amount_min = 0.25
 scale_amount_max = 0.25
 
 [node name="CPUParticles3D6" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.6143, 156.85, 56.6753)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.6143, 180.483, 56.6753)
 amount = 38
 lifetime = 8.0
 preprocess = 5.0
@@ -176,7 +176,7 @@ scale_amount_min = 0.25
 scale_amount_max = 0.25
 
 [node name="CPUParticles3D7" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9987, 156.85, 56.6753)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9987, 180.483, 56.6753)
 amount = 38
 lifetime = 8.0
 preprocess = 5.0
@@ -190,7 +190,7 @@ scale_amount_min = 0.25
 scale_amount_max = 0.25
 
 [node name="CPUParticles3D8" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40824, 156.85, 93.9928)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40824, 180.483, 93.9928)
 amount = 24
 lifetime = 8.0
 preprocess = 5.0
@@ -204,7 +204,7 @@ scale_amount_min = 0.25
 scale_amount_max = 0.25
 
 [node name="CPUParticles3D9" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40824, 156.85, 18.7987)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40824, 180.483, 18.7987)
 amount = 24
 lifetime = 8.0
 preprocess = 5.0

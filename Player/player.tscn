@@ -1,14 +1,16 @@
-[gd_scene load_steps=25 format=3 uid="uid://8cb83a47bsoe"]
+[gd_scene load_steps=27 format=3 uid="uid://8cb83a47bsoe"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_wqsqa"]
 [ext_resource type="Texture2D" uid="uid://c7unk0v2rqh48" path="res://Untitled-2.png" id="2_7h7t1"]
 [ext_resource type="PackedScene" uid="uid://cdtfesrglvg5y" path="res://Player/Gun/gun.glb" id="2_mmv5g"]
+[ext_resource type="PackedScene" uid="uid://ctbu4pgydjqnu" path="res://Player/Gun/gun.tscn" id="2_ripbv"]
 [ext_resource type="PackedScene" uid="uid://b43rhvnfi8ajj" path="res://Menu/pause_menu.tscn" id="2_vtixv"]
 [ext_resource type="Texture2D" uid="uid://cbfi80pixlp6l" path="res://Player/Gun/gunsmoke.png" id="3_7cn2k"]
 [ext_resource type="Texture2D" uid="uid://b5fdwjnepa6b3" path="res://bloodgroundclipped.png" id="5_nbw5f"]
 [ext_resource type="Texture2D" uid="uid://ckvryps0currj" path="res://Sprites/flash3.png" id="5_nmn6q"]
 [ext_resource type="AudioStream" uid="uid://3p6yfneudusq" path="res://Player/Gun/128299__xenonn__layered-gunshot-5.wav" id="6_a86o7"]
 [ext_resource type="AudioStream" uid="uid://b01bd6xfbfvld" path="res://Player/player_damage.wav" id="9_11n7d"]
+[ext_resource type="Script" path="res://Player/gun_camera.gd" id="11_vxens"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_bje5y"]
 
@@ -122,7 +124,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Camera3D/gun/Gunsmoke:flip_h")
+tracks/5/path = NodePath("Camera3D/gun2/Gunsmoke:flip_h")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -222,6 +224,23 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_lwq1o"]
+resource_name = "damage_shake"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5, 0), Vector3(0.25, 1.5, 0), Vector3(0, 1.5, 0), Vector3(-0.25, 1.5, 0), Vector3(0, 1.5, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_gaujj"]
@@ -370,23 +389,6 @@ tracks/2/keys = {
 "values": [false]
 }
 
-[sub_resource type="Animation" id="Animation_lwq1o"]
-resource_name = "damage_shake"
-length = 0.3
-step = 0.05
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera3D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.15, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 1.5, 0), Vector3(0.25, 1.5, 0), Vector3(0, 1.5, 0), Vector3(-0.25, 1.5, 0), Vector3(0, 1.5, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_85q82"]
 _data = {
 "RESET": SubResource("Animation_jpt50"),
@@ -413,13 +415,16 @@ shape = SubResource("CapsuleShape3D_okv44")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+cull_mask = 1048573
+far = 50.0
 
-[node name="gun" parent="Camera3D" instance=ExtResource("2_mmv5g")]
+[node name="gun" parent="Camera3D" instance=ExtResource("2_ripbv")]
 transform = Transform3D(0.0285583, 0, -0.170626, 0, 0.173, 0, 0.170626, 0, 0.0285583, 0.557209, -0.487988, -0.900845)
 
 [node name="Gunsmoke" type="Sprite3D" parent="Camera3D/gun"]
-transform = Transform3D(-1.62921e-07, 0, 1, 0, 3, 0, -1, 0, -1.62921e-07, -2.42216, 3.24758, 0.0335078)
+transform = Transform3D(-1.78814e-07, 0, 1, 0, 3, 0, -1, 0, -1.78814e-07, -2.42216, 3.24758, 0.0335073)
 visible = false
+layers = 2
 transparency = 0.77
 cast_shadow = 0
 flip_h = true
@@ -434,6 +439,10 @@ texture = ExtResource("3_7cn2k")
 libraries = {
 "": SubResource("AnimationLibrary_b2nrp")
 }
+
+[node name="gun3" parent="Camera3D" instance=ExtResource("2_mmv5g")]
+transform = Transform3D(0.0285583, 0, -0.170626, 0, 0.173, 0, 0.170626, 0, 0.0285583, 0.557209, -0.487988, -0.900845)
+visible = false
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
 target_position = Vector3(0, 0, -100)
@@ -487,19 +496,18 @@ texture = ExtResource("5_nbw5f")
 
 [node name="Flash" type="Sprite3D" parent="Camera3D"]
 transform = Transform3D(0.934204, -0.356738, 0, 0.356738, 0.934204, 0, 0, 0, 1, 0.476, -0.279, -1.302)
-visible = false
+layers = 2
 pixel_size = 0.0085
 texture = ExtResource("5_nmn6q")
 
 [node name="AimFlash" type="Sprite3D" parent="Camera3D"]
 transform = Transform3D(0.934204, -0.356738, 0, 0.356738, 0.934204, 0, 0, 0, 1, 0, -0.023, -1.014)
 visible = false
+layers = 2
 pixel_size = 0.0104
 texture = ExtResource("5_nmn6q")
 
 [node name="PauseMenu" parent="." instance=ExtResource("2_vtixv")]
-grow_horizontal = 2
-grow_vertical = 2
 mouse_filter = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -526,5 +534,25 @@ pitch_scale = 0.85
 stream = ExtResource("6_a86o7")
 volume_db = -2.0
 pitch_scale = 20.0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(426, 240)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+cull_mask = 2
+far = 10.0
+script = ExtResource("11_vxens")
+camera_path = NodePath("../../../Camera3D")
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
