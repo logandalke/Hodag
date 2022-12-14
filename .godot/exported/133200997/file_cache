@@ -8,7 +8,7 @@ res://Enviro Assets/brokenglass.tscn::153b8085a8c5601d3888482136611cfb::16698819
 res://Enviro Assets/deer.tscn::f05039103db41c77173031640c0bc115::1669881944::res://.godot/exported/133200997/export-fda84f94028a5a6a759bb9f010edc770-deer.scn
 res://Enviro Assets/groundandrail.tscn::77f46edfc2bd01d5ef086148ed21f2b6::1669881944::res://.godot/exported/133200997/export-1030aa8b002cbad61fd5ee77bc25a729-groundandrail.scn
 res://Enviro Assets/hanginglight.tscn::26c9259f598594304c33e3cc70a95ca3::1669881944::res://.godot/exported/133200997/export-574cabf8ea64debcf37f9c4a19cbc436-hanginglight.scn
-res://Enviro Assets/macguffin_shader.tres::5c461a2cce4a80f3d9a1ca41e85fada0::1670974162::res://.godot/exported/133200997/export-69ad5f35df8488465e5d892ecc9d693c-macguffin_shader.res
+res://Enviro Assets/macguffin_shader.tres::5c461a2cce4a80f3d9a1ca41e85fada0::1670980704::res://.godot/exported/133200997/export-69ad5f35df8488465e5d892ecc9d693c-macguffin_shader.res
 res://Enviro Assets/navigation_region_3d.tscn::379fe08be8081bfb8fbcca796160a8d5::1669881944::res://.godot/exported/133200997/export-4946aad31b563538a006c56db9d2dc8f-navigation_region_3d.scn
 res://Enviro Assets/pine.tscn::a5967551ad9ea600dd392dddad0ee7ef::1669881944::res://.godot/exported/133200997/export-6798f986d1616fb9be9c6a856244e323-pine.scn
 res://Enviro Assets/railcar.tscn::1c35722b0b67e6f9e66c479ff3ea7a60::1669881944::res://.godot/exported/133200997/export-0120ab6cddca93c01b87decdd505af30-railcar.scn
@@ -33,7 +33,7 @@ res://Menu/equipment_menu.tscn::ab5af9cdb235f6cd3edfd178052f291e::1669881944::re
 res://Menu/good_ending.tscn::7aeea1bfc24717101c14dcb2d4adc13b::1670485186::res://.godot/exported/133200997/export-41c1b78269892b2726b8d3e3bfccd889-good_ending.scn
 res://Menu/loading_screen.tscn::f3b4dc49c50b3033cc579d5121e76e3e::1669881944::res://.godot/exported/133200997/export-baece05e582e012425319ec153c85ceb-loading_screen.scn
 res://Menu/maintheme.tres::ab2f139663e8c3bd629d08716435c5d9::1669881944::res://.godot/exported/133200997/export-055a86eedcf1cb05c36c29708000a916-maintheme.res
-res://Menu/main_menu.tres::1a85be77afdd8edeac41f87cad9a86db::1670481323::res://.godot/exported/133200997/export-a5215d2e54ae4d022876c2a0568601ed-main_menu.res
+res://Menu/main_menu.tres::1a85be77afdd8edeac41f87cad9a86db::1670980704::res://.godot/exported/133200997/export-a5215d2e54ae4d022876c2a0568601ed-main_menu.res
 res://Menu/main_menu.tscn::7e16c217260e54078b28237ceef9084f::1670396345::res://.godot/exported/133200997/export-7bcd1953aecf3a3c8cd06d947ed78dc8-main_menu.scn
 res://Menu/pause_menu.tscn::4fa93bba7159fb757822ba87ea82894b::1670485207::res://.godot/exported/133200997/export-dcb0153e81561e0887837adb9d807390-pause_menu.scn
 res://Menu/premise.tscn::fa6ac6cc580bf92ff29886fad64deda9::1669881944::res://.godot/exported/133200997/export-1553e47b55de4822e7ecc8088363cbcb-premise.scn
@@ -44,7 +44,7 @@ res://Nav Mesh/new_navigation_mesh.tres::da9471a7a6f37266f1d667243f3e51b0::16698
 res://Player/Gun/bullet_hole.tscn::a1066cfde807721d5292b848de13f50a::1669881944::res://.godot/exported/133200997/export-05338aa098d7b2dd9d50f7adbac3865a-bullet_hole.scn
 res://Player/Gun/gun.tscn::ebbbb2f6b03d1c595daa8139a005ebf3::1670486149::res://.godot/exported/133200997/export-75f31e5fb78925efdf67831bcc2e4c0f-gun.scn
 res://Player/damaged.tres::7b9cdf1f4d6782d747ca456a93748716::1669881944::res://.godot/exported/133200997/export-6b923f9e25b60520d06a76e2591ea26e-damaged.res
-res://Player/player.tscn::f347309de0ed28735f1a9e73ab3fc8f6::1670978010::res://.godot/exported/133200997/export-d267b47f7e81a3258979164d56d0d9c2-player.scn
+res://Player/player.tscn::f347309de0ed28735f1a9e73ab3fc8f6::1670982120::res://.godot/exported/133200997/export-d267b47f7e81a3258979164d56d0d9c2-player.scn
 res://Testing/test_player.tscn::fcdd605262ab8cd18caf267f2e68b3c7::1669881944::res://.godot/exported/133200997/export-bccf2684c1cfbc15cc428c5db02754c2-test_player.scn
 res://EnviroFinal.tscn::8b55531e615ad81e94f83d3f11aeea14::1670977926::res://.godot/exported/133200997/export-cd4b7d168879938d3927f745f58af3d9-EnviroFinal.scn
 res://Environment.tscn::8733b08a07c9b6e6533644e02fdd1365::1670977926::res://.godot/exported/133200997/export-b7e2c1eeeb902387ea28255c3572cae4-Environment.scn

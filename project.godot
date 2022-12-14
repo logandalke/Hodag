@@ -18,7 +18,8 @@ boot_splash/image="res://Menu/godotdag_splash_background_font.png"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
 boot_splash/bg_color=Color(0, 0, 0, 1)
-config/icon="res://icon.png"
+config/icon="res://Icons/256.png"
+config/windows_native_icon="res://256.ico"
 
 [display]
 
