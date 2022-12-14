@@ -1,8 +1,3 @@
-res://Enviro Assets/macguffin_shader.tres
-res://Hodag/hodag_meme.tscn
-res://EnviroFinal.tscn
 res://Player/player.tscn
-res://EnviroFinal.gd
-res://Enviro Assets/warehousestairs.tscn
-res://Environment.tscn
-res://Enviro Assets/warehousestairs.gd
+res://Enviro Assets/macguffin_shader.tres
+res://Menu/main_menu.tres

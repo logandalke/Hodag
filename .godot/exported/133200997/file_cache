@@ -1,0 +1,52 @@
+res://Collectables/spark_plugs.tscn::9cbb69126ed4af0289c69ea46de794cf::1669881944::res://.godot/exported/133200997/export-be7c6eb865234b518bb9282dab49cf33-spark_plugs.scn
+res://Collectables/tire.tscn::043478c0451f67e6591e74fbaea383fa::1669881944::res://.godot/exported/133200997/export-fa674192e8597a0241435a1d499befd4-tire.scn
+res://Collectables/toolbox.tscn::f4c174919d9ad2c49bc5f57787e40dd7::1669881944::res://.godot/exported/133200997/export-2ead0cd4186ebbea4c7048fc866ea617-toolbox.scn
+res://Enemies/enemy.tscn::2c8a3da1a6408c2bfae8daa93c3467ca::1669881944::res://.godot/exported/133200997/export-ea09a7a9bae2256955b1ef54748fdfa6-enemy.scn
+res://Enemies/hodagapplied.tscn::df5397288d21f602ceaaa2df988ca95e::1669881944::res://.godot/exported/133200997/export-4ffaf8c6e5227b49f3919feaf16cde56-hodagapplied.scn
+res://Enviro Assets/box.tscn::edc897d2f5d190082c5feb0d6ed850f4::1669881944::res://.godot/exported/133200997/export-d685efa5bd7dad8b76c70a9e9b885e63-box.scn
+res://Enviro Assets/brokenglass.tscn::153b8085a8c5601d3888482136611cfb::1669881944::res://.godot/exported/133200997/export-4556028f103f56a4774717be67002968-brokenglass.scn
+res://Enviro Assets/deer.tscn::f05039103db41c77173031640c0bc115::1669881944::res://.godot/exported/133200997/export-fda84f94028a5a6a759bb9f010edc770-deer.scn
+res://Enviro Assets/groundandrail.tscn::77f46edfc2bd01d5ef086148ed21f2b6::1669881944::res://.godot/exported/133200997/export-1030aa8b002cbad61fd5ee77bc25a729-groundandrail.scn
+res://Enviro Assets/hanginglight.tscn::26c9259f598594304c33e3cc70a95ca3::1669881944::res://.godot/exported/133200997/export-574cabf8ea64debcf37f9c4a19cbc436-hanginglight.scn
+res://Enviro Assets/macguffin_shader.tres::5c461a2cce4a80f3d9a1ca41e85fada0::1670974162::res://.godot/exported/133200997/export-69ad5f35df8488465e5d892ecc9d693c-macguffin_shader.res
+res://Enviro Assets/navigation_region_3d.tscn::379fe08be8081bfb8fbcca796160a8d5::1669881944::res://.godot/exported/133200997/export-4946aad31b563538a006c56db9d2dc8f-navigation_region_3d.scn
+res://Enviro Assets/pine.tscn::a5967551ad9ea600dd392dddad0ee7ef::1669881944::res://.godot/exported/133200997/export-6798f986d1616fb9be9c6a856244e323-pine.scn
+res://Enviro Assets/railcar.tscn::1c35722b0b67e6f9e66c479ff3ea7a60::1669881944::res://.godot/exported/133200997/export-0120ab6cddca93c01b87decdd505af30-railcar.scn
+res://Enviro Assets/reel.tscn::084f2cce3043dac164fe524619b8ce3f::1669881944::res://.godot/exported/133200997/export-6b95262a8f326f837ef3344e903c8e58-reel.scn
+res://Enviro Assets/rock.tscn::04fbd662ad83916e0d14b38da9b7657c::1669881944::res://.godot/exported/133200997/export-03783c7a8ca73fa0e779542209f2ce9c-rock.scn
+res://Enviro Assets/sparkplug.tscn::c14d2f9d6c8fdf038da7ada7462a6b52::1669881944::res://.godot/exported/133200997/export-5c717d0dc0ebf50614f469428aaf940c-sparkplug.scn
+res://Enviro Assets/tablet.tscn::e32f8aee3717ca396e65e9810dafaedc::1669881944::res://.godot/exported/133200997/export-464b88e5c6ae90096756ec95b50eb6f9-tablet.scn
+res://Enviro Assets/tire.tscn::46191686c516e1c00abaa7ccb9025810::1669881944::res://.godot/exported/133200997/export-0cf68d458c174d83c9a2a2413665cfec-tire.scn
+res://Enviro Assets/toolbox.tscn::04de47808699f05f1ea5b89be61ac34f::1669881944::res://.godot/exported/133200997/export-05b815e44dd89ce38fdf95f8315d8056-toolbox.scn
+res://Enviro Assets/tree.tscn::72d8a8d8c70d37c7df19ee6ff7fc5ba4::1669881944::res://.godot/exported/133200997/export-f5231560641517a836b4db76893af1f2-tree.scn
+res://Enviro Assets/truck.tscn::f36d22d057574c6cf14655b6110e7efe::1669881944::res://.godot/exported/133200997/export-70d1c677b11586e6ea697b5c57e6c0ec-truck.scn
+res://Enviro Assets/warehouse.tscn::9d81c9fa4ad32e73533417a47dca9c0d::1670396299::res://.godot/exported/133200997/export-29892b27b8e71f2d5de8914719755a1c-warehouse.scn
+res://Enviro Assets/warehousestairs.tscn::de5e7e036a0aa5a829e5c714c0fb273d::1670977961::res://.godot/exported/133200997/export-c063c46bde03ce7d3811a482bb89223f-warehousestairs.scn
+res://Enviro Assets/woodstack.tscn::79c3ae2a295cab739499e6eff17b5341::1669881944::res://.godot/exported/133200997/export-1228c40d56f6d1d4227f297bc8d2f42f-woodstack.scn
+res://Hodag/hodag.tscn::0dd54c5d2f10476dc5508a19208d200c::1670315713::res://.godot/exported/133200997/export-c08f7b7c28d4af136de61bff0a91a0bf-hodag.scn
+res://Hodag/hodag_meme.tscn::69b777ec9ca4bd1587c320c241b1ecea::1670974991::res://.godot/exported/133200997/export-610961b6a9bdbc865ddbc2870a3c2505-hodag_meme.scn
+res://Menu/bad_ending.tscn::1eba6449f2ff9bbf340fca3a99e92d7a::1670462601::res://.godot/exported/133200997/export-a0126337ce4ae4e366d0a238b3bb1c09-bad_ending.scn
+res://Menu/credits.tscn::7d25df858f0f451fa851d4ea5f0cd8f3::1670485186::res://.godot/exported/133200997/export-cd9fe96d7f0cafeee8858d761b0c6a72-credits.scn
+res://Menu/death_ending.tscn::4601c8a43fc124e12a28be4bd44bfa63::1670486262::res://.godot/exported/133200997/export-66cdc92f369e3cea0176c973c79f382d-death_ending.scn
+res://Menu/drop_shadow.tres::6db55215a39cccb6ee1fe7fc3ffbc5d9::1669881944::res://.godot/exported/133200997/export-7801ec1d0ff149f72b726de070e295c7-drop_shadow.res
+res://Menu/equipment_menu.tscn::ab5af9cdb235f6cd3edfd178052f291e::1669881944::res://.godot/exported/133200997/export-db50a72f456aa69f4c99144ca25be82d-equipment_menu.scn
+res://Menu/good_ending.tscn::7aeea1bfc24717101c14dcb2d4adc13b::1670485186::res://.godot/exported/133200997/export-41c1b78269892b2726b8d3e3bfccd889-good_ending.scn
+res://Menu/loading_screen.tscn::f3b4dc49c50b3033cc579d5121e76e3e::1669881944::res://.godot/exported/133200997/export-baece05e582e012425319ec153c85ceb-loading_screen.scn
+res://Menu/maintheme.tres::ab2f139663e8c3bd629d08716435c5d9::1669881944::res://.godot/exported/133200997/export-055a86eedcf1cb05c36c29708000a916-maintheme.res
+res://Menu/main_menu.tres::1a85be77afdd8edeac41f87cad9a86db::1670481323::res://.godot/exported/133200997/export-a5215d2e54ae4d022876c2a0568601ed-main_menu.res
+res://Menu/main_menu.tscn::7e16c217260e54078b28237ceef9084f::1670396345::res://.godot/exported/133200997/export-7bcd1953aecf3a3c8cd06d947ed78dc8-main_menu.scn
+res://Menu/pause_menu.tscn::4fa93bba7159fb757822ba87ea82894b::1670485207::res://.godot/exported/133200997/export-dcb0153e81561e0887837adb9d807390-pause_menu.scn
+res://Menu/premise.tscn::fa6ac6cc580bf92ff29886fad64deda9::1669881944::res://.godot/exported/133200997/export-1553e47b55de4822e7ecc8088363cbcb-premise.scn
+res://Menu/screen_fade.tscn::303b41013e9ba2c7ace8c220bcff8adf::1669881944::res://.godot/exported/133200997/export-b80cda2b62f4359dfa849630ae34ba66-screen_fade.scn
+res://Menu/screen_fade_out.tscn::0b56bd6d54904a556ed2d6f8892aa4c9::1669881944::res://.godot/exported/133200997/export-39dd5542a21fc69493a8ed3b686165c8-screen_fade_out.scn
+res://Nav Mesh/navmesh.tscn::e7b13808d281c4bfe7000222a34c718b::1669881944::res://.godot/exported/133200997/export-9acf719086b01ba67e3a66714b0b1e91-navmesh.scn
+res://Nav Mesh/new_navigation_mesh.tres::da9471a7a6f37266f1d667243f3e51b0::1669881944::res://.godot/exported/133200997/export-dcf2000ba2a404c87ef05f4a63c6de2b-new_navigation_mesh.res
+res://Player/Gun/bullet_hole.tscn::a1066cfde807721d5292b848de13f50a::1669881944::res://.godot/exported/133200997/export-05338aa098d7b2dd9d50f7adbac3865a-bullet_hole.scn
+res://Player/Gun/gun.tscn::ebbbb2f6b03d1c595daa8139a005ebf3::1670486149::res://.godot/exported/133200997/export-75f31e5fb78925efdf67831bcc2e4c0f-gun.scn
+res://Player/damaged.tres::7b9cdf1f4d6782d747ca456a93748716::1669881944::res://.godot/exported/133200997/export-6b923f9e25b60520d06a76e2591ea26e-damaged.res
+res://Player/player.tscn::f347309de0ed28735f1a9e73ab3fc8f6::1670978010::res://.godot/exported/133200997/export-d267b47f7e81a3258979164d56d0d9c2-player.scn
+res://Testing/test_player.tscn::fcdd605262ab8cd18caf267f2e68b3c7::1669881944::res://.godot/exported/133200997/export-bccf2684c1cfbc15cc428c5db02754c2-test_player.scn
+res://EnviroFinal.tscn::8b55531e615ad81e94f83d3f11aeea14::1670977926::res://.godot/exported/133200997/export-cd4b7d168879938d3927f745f58af3d9-EnviroFinal.scn
+res://Environment.tscn::8733b08a07c9b6e6533644e02fdd1365::1670977926::res://.godot/exported/133200997/export-b7e2c1eeeb902387ea28255c3572cae4-Environment.scn
+res://new_audio_stream_wav.tres::97031442cdf11d5f21d5115b0333079f::1669881944::res://.godot/exported/133200997/export-7eb4718f329e308f60583615747951a1-new_audio_stream_wav.res
+res://world.tscn::f613758d383ea11f4317a88045913362::1669881944::res://.godot/exported/133200997/export-76e0adcbc83681695885bae615f516ae-world.scn
