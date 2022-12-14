@@ -1,13 +1,8 @@
-res://Menu/credits.tscn
-res://Menu/main_menu.tres
 res://Enviro Assets/macguffin_shader.tres
-res://Menu/death_ending.tscn
-res://Player/player.tscn
-res://Menu/good_ending.tscn
-res://Menu/ending.gd
-res://Menu/credits.gd
-res://Menu/pause_menu.tscn
-res://Player/Gun/gun.tscn
-res://Player/gun_camera.gd
-res://Environment.tscn
+res://Hodag/hodag_meme.tscn
 res://EnviroFinal.tscn
+res://Player/player.tscn
+res://EnviroFinal.gd
+res://Enviro Assets/warehousestairs.tscn
+res://Environment.tscn
+res://Enviro Assets/warehousestairs.gd

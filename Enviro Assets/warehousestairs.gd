@@ -16,3 +16,4 @@ func _on_static_body_3d_2_tree_exited():
 	broken_glass2.emitting = true
 	broken_glass_sound2.play()
 
+

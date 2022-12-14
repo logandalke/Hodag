@@ -1,3 +1,7 @@
+StaticBody3D
+MeshInstance3D
+AnimationPlayer
+AnimationTree
 Camera3D
 SubViewport
 SubViewportContainer
@@ -12,7 +16,6 @@ AudioStreamPlayer
 Timer
 CollisionShape3D
 Area3D
-AnimationPlayer
 ColorRect
 Container
 HBoxContainer

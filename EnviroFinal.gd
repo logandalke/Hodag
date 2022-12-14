@@ -7,6 +7,7 @@ extends Node
 
 @onready var music = $AudioStreamPlayer
 
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	$ScreenFadeOut.transition_clear()
@@ -18,4 +19,5 @@ func _ready():
 func _on_screen_fade_out_child_exiting_tree(node):
 #		get_tree().create_timer(.25).timeout
 		get_tree().paused = true
+		music.play()
 		
