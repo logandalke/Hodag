@@ -1,6 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://btnyhvt35440j"]
+[gd_scene load_steps=9 format=3]
 
-[ext_resource type="Shader" uid="uid://bm7riv8330lcl" path="res://Enviro Assets/macguffin_shader.tres" id="1_r2aha"]
+[ext_resource type="Shader" uid="uid://bm7riv8330lcl" path="res://Collectables/macguffin_shader.tres" id="1_r2aha"]
 
 [sub_resource type="Image" id="Image_csco2"]
 data = {

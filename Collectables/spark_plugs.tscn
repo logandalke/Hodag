@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://brjwjpkqxk41m"]
+[gd_scene load_steps=3 format=3]
 
-[ext_resource type="PackedScene" uid="uid://temff1hlxwl4" path="res://Enviro Assets/sparkplug.tscn" id="1_d35oy"]
+[ext_resource type="PackedScene" path="res://Enviro Assets/Scenes/sparkplug.tscn" id="1_d35oy"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b7vke"]
 

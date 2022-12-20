@@ -1,6 +1,6 @@
 extends Control
 
-const game = preload("res://EnviroFinal.tscn")
+const game = preload("res://Enviro Assets/Scenes/EnviroFinal.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

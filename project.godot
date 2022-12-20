@@ -19,7 +19,7 @@ boot_splash/fullsize=false
 boot_splash/use_filter=false
 boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://Icons/256.png"
-config/windows_native_icon="res://256.ico"
+config/windows_native_icon="res://Icons/256.ico"
 
 [display]
 

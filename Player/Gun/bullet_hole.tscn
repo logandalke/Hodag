@@ -1,12 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://rkmicbnsmwhg"]
+[gd_scene load_steps=6 format=3 uid="uid://c87f7fm8kguvf"]
 
 [ext_resource type="Script" path="res://Player/Gun/bullet_hole.gd" id="1_71ijj"]
-[ext_resource type="Texture2D" uid="uid://dln6yh4tegfdy" path="res://snowflake.png" id="2_47fe3"]
+[ext_resource type="Texture2D" uid="uid://dln6yh4tegfdy" path="res://Enviro Assets/Sprites/snowflake.png" id="2_dgrkw"]
+[ext_resource type="Texture2D" uid="uid://c7noxpuh7bacd" path="res://Enviro Assets/Sprites/snowflake - Copy.png" id="3_0nexo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6vf2u"]
 transparency = 1
 albedo_color = Color(0.243137, 0.243137, 0.243137, 1)
-albedo_texture = ExtResource("2_47fe3")
+albedo_texture = ExtResource("3_0nexo")
 emission_enabled = true
 emission = Color(0.196078, 0.196078, 0.196078, 1)
 texture_filter = 0
@@ -25,7 +26,7 @@ cast_shadow = 0
 modulate = Color(0.262745, 0.262745, 0.262745, 1)
 pixel_size = 0.002
 texture_filter = 0
-texture = ExtResource("2_47fe3")
+texture = ExtResource("2_dgrkw")
 
 [node name="CPUParticles3D" type="CPUParticles3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)

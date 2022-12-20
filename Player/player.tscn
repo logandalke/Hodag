@@ -1,14 +1,14 @@
-[gd_scene load_steps=27 format=3 uid="uid://8cb83a47bsoe"]
+[gd_scene load_steps=27 format=3 uid="uid://bkjuh5bk1tuq2"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_wqsqa"]
-[ext_resource type="Texture2D" uid="uid://c7unk0v2rqh48" path="res://Untitled-2.png" id="2_7h7t1"]
 [ext_resource type="PackedScene" uid="uid://cdtfesrglvg5y" path="res://Player/Gun/gun.glb" id="2_mmv5g"]
 [ext_resource type="PackedScene" uid="uid://ctbu4pgydjqnu" path="res://Player/Gun/gun.tscn" id="2_ripbv"]
 [ext_resource type="PackedScene" uid="uid://b43rhvnfi8ajj" path="res://Menu/pause_menu.tscn" id="2_vtixv"]
-[ext_resource type="Texture2D" uid="uid://cbfi80pixlp6l" path="res://Player/Gun/gunsmoke.png" id="3_7cn2k"]
-[ext_resource type="Texture2D" uid="uid://b5fdwjnepa6b3" path="res://bloodgroundclipped.png" id="5_nbw5f"]
-[ext_resource type="Texture2D" uid="uid://ckvryps0currj" path="res://Sprites/flash3.png" id="5_nmn6q"]
+[ext_resource type="Texture2D" uid="uid://cbfi80pixlp6l" path="res://Player/Gun/Sprites/gunsmoke.png" id="3_sahwh"]
+[ext_resource type="Texture2D" uid="uid://c7unk0v2rqh48" path="res://Player/Gun/Sprites/reticle.png" id="5_hl6p6"]
 [ext_resource type="AudioStream" uid="uid://3p6yfneudusq" path="res://Player/Gun/128299__xenonn__layered-gunshot-5.wav" id="6_a86o7"]
+[ext_resource type="Texture2D" uid="uid://b5fdwjnepa6b3" path="res://Enviro Assets/Sprites/bloodgroundclipped.png" id="6_j64j4"]
+[ext_resource type="Texture2D" uid="uid://ckvryps0currj" path="res://Player/Gun/Sprites/flash3.png" id="7_r4wbc"]
 [ext_resource type="AudioStream" uid="uid://b01bd6xfbfvld" path="res://Player/player_damage.wav" id="9_11n7d"]
 [ext_resource type="Script" path="res://Player/gun_camera.gd" id="11_vxens"]
 
@@ -433,7 +433,7 @@ pixel_size = 0.0445
 billboard = 1
 alpha_cut = 2
 texture_filter = 0
-texture = ExtResource("3_7cn2k")
+texture = ExtResource("3_sahwh")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3D/gun/Gunsmoke"]
 libraries = {
@@ -477,7 +477,7 @@ offset_bottom = 14.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("2_7h7t1")
+texture = ExtResource("5_hl6p6")
 ignore_texture_size = true
 metadata/_edit_layout_mode = 1
 
@@ -492,20 +492,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_nbw5f")
+texture = ExtResource("6_j64j4")
 
 [node name="Flash" type="Sprite3D" parent="Camera3D"]
 transform = Transform3D(0.934204, -0.356738, 0, 0.356738, 0.934204, 0, 0, 0, 1, 0.476, -0.279, -1.302)
 layers = 2
 pixel_size = 0.0085
-texture = ExtResource("5_nmn6q")
+texture = ExtResource("7_r4wbc")
 
 [node name="AimFlash" type="Sprite3D" parent="Camera3D"]
 transform = Transform3D(0.934204, -0.356738, 0, 0.356738, 0.934204, 0, 0, 0, 1, 0, -0.023, -1.014)
 visible = false
 layers = 2
 pixel_size = 0.0104
-texture = ExtResource("5_nmn6q")
+texture = ExtResource("7_r4wbc")
 
 [node name="PauseMenu" parent="." instance=ExtResource("2_vtixv")]
 mouse_filter = 2
