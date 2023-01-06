@@ -1,8 +1,8 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1671572240
-export_presets.cfg::TextFile::-1::1671572092::0::1::::<><>::
-::res://Collectables/::1671000580
-macguffin_shader.tres::VisualShader::3295794525987174979::1671000170::0::1::::<><>::
+::res://::1672995406
+export_presets.cfg::TextFile::-1::1672912902::0::1::::<><>::
+::res://Collectables/::1672994603
+macguffin_shader.tres::VisualShader::3295794525987174979::1672994603::0::1::::<><>::
 spark_plugs.tscn::PackedScene::-1::1671000580::0::1::::<><>::res://Enviro Assets/Scenes/sparkplug.tscn
 tire.tscn::PackedScene::-1::1671000015::0::1::::<><>::uid://bm7riv8330lcl
 toolbox.tscn::PackedScene::-1::1671000015::0::1::::<><>::uid://bm7riv8330lcl
@@ -14,11 +14,11 @@ HodagEmission.png::CompressedTexture2D::798693166487587483::1669881944::16698819
 ::res://Enviro Assets/Audio/::1671000022
 173560__gevaroy__001_edited.wav::AudioStreamWAV::4539197412467760755::1670395303::1670999932::1::::<><>::
 hodag_music.ogg::AudioStreamOggVorbis::3900513736866456120::1670975956::1671000022::1::::<><>::
-::res://Enviro Assets/Scenes/::1671000594
+::res://Enviro Assets/Scenes/::1672995137
 box.tscn::PackedScene::8615938146691031789::1669881944::0::1::::<><>::
 brokenglass.tscn::PackedScene::-1::1671000132::0::1::::<><>::uid://cph5osxlgo1od
 deer.tscn::PackedScene::8052490567756057689::1669881944::0::1::::<><>::
-EnviroFinal.tscn::PackedScene::-1::1671000594::0::1::::<><>::res://Enviro Assets/Scripts/EnviroFinal.gd<>uid://ci0em3chfmtod<>res://Enviro Assets/Scenes/warehouse.tscn<>res://Enviro Assets/Scenes/Environment.tscn<>uid://bkjuh5bk1tuq2<>res://Collectables/tire.tscn<>res://Collectables/toolbox.tscn<>res://Enviro Assets/Scenes/tablet.tscn<>res://Collectables/spark_plugs.tscn<>uid://bvto5kotfyarg<>uid://dxvxfb3d53etd<>uid://chdblets6hjev<>uid://eaoqx4gdyta1<>uid://doqmhrgtavfq0
+EnviroFinal.tscn::PackedScene::6856069480392405328::1672995137::0::1::::<><>::res://Enviro Assets/Scripts/EnviroFinal.gd<>uid://ci0em3chfmtod<>res://Enviro Assets/Scenes/warehouse.tscn<>res://Enviro Assets/Scenes/Environment.tscn<>uid://bkjuh5bk1tuq2<>res://Collectables/tire.tscn<>res://Collectables/toolbox.tscn<>res://Enviro Assets/Scenes/tablet.tscn<>res://Collectables/spark_plugs.tscn<>uid://bvto5kotfyarg<>uid://dxvxfb3d53etd<>uid://chdblets6hjev<>uid://eaoqx4gdyta1<>uid://doqmhrgtavfq0
 Environment.tscn::PackedScene::-1::1671000580::0::1::::<><>::uid://cc5r0uv8hvb4b<>uid://b4lki4hdk1it0<>uid://cwp705lr46gx7<>uid://dauy2osc7ow8f<>uid://du0viikdv1nbx<>uid://dmyxlwx345qxl<>uid://bqyf141ef1tsv<>uid://c7noxpuh7bacd<>uid://coeuhl02pmiei<>uid://d3iy0dwggpg8y<>res://Enviro Assets/Scenes/warehousestairs.tscn<>uid://bx6uujrbf7d4t<>res://Enviro Assets/Scenes/truck.tscn
 groundandrail.tscn::PackedScene::5386227331908516795::1669881944::0::1::::<><>::
 hanginglight.tscn::PackedScene::4066010352502331817::1669881944::0::1::::<><>::
@@ -52,8 +52,8 @@ ToolboxRust.png::CompressedTexture2D::6768435097955627182::1669881944::167100005
 truckemission.png::CompressedTexture2D::4770499924532519897::1669881944::1671000054::1::::<><>::
 ::res://Font/::1669881944
 Compacta Bold.otf::FontFile::15904873686223486::1669881944::1669881944::1::::<><>::
-::res://Hodag/::1671000619
-hodag.gd::GDScript::-1::1670398819::0::1::::<>CharacterBody3D<>::
+::res://Hodag/::1672995392
+hodag.gd::GDScript::-1::1672995392::0::1::::<>CharacterBody3D<>::
 hodag.tscn::PackedScene::8175677913577128533::1670315713::0::1::::<><>::res://Hodag/hodag.gd<>uid://lm5mh5cjetvv<>uid://6t06bc2wsulu<>uid://cljxajugrjplp<>uid://ckkjbxtvoidtb<>uid://bvjr0l6gm2m10
 hodag_meme.tscn::PackedScene::5270437007144562665::1670974991::0::1::::<><>::uid://lm5mh5cjetvv
 hodag_sound_1.wav::AudioStreamWAV::2216650671406198826::1670313405::1670313405::1::::<><>::
@@ -98,12 +98,12 @@ screen_fade_out.tscn::PackedScene::8818362903347832377::1669881944::0::1::::<><>
 ::res://Nav Mesh/::1671000106
 navmesh.tscn::PackedScene::-1::1671000106::0::1::::<><>::uid://b506dwkqfnl8i<>res://Enviro Assets/Scripts/warehouse.gd
 new_navigation_mesh.tres::NavigationMesh::4545584192538962638::1669881944::0::1::::<><>::
-::res://Player/::1671571968
+::res://Player/::1672995135
 Camera2.gd::GDScript::-1::1669881944::0::1::::<>Camera3D<>::
 damaged.tres::VisualShader::2333697088216405769::1669881944::0::1::::<><>::
 gun_camera.gd::GDScript::-1::1670486141::0::1::::<>Camera3D<>::
 player.gd::GDScript::-1::1670398787::0::1::::<>CharacterBody3D<>::
-player.tscn::PackedScene::3108116938007804611::1671571968::0::1::::<><>::res://Player/player.gd<>uid://cdtfesrglvg5y<>uid://ctbu4pgydjqnu<>uid://b43rhvnfi8ajj<>uid://cbfi80pixlp6l<>uid://c7unk0v2rqh48<>uid://3p6yfneudusq<>uid://b5fdwjnepa6b3<>uid://ckvryps0currj<>uid://b01bd6xfbfvld<>res://Player/gun_camera.gd
+player.tscn::PackedScene::3108116938007804611::1672995135::0::1::::<><>::res://Player/player.gd<>uid://cdtfesrglvg5y<>uid://ctbu4pgydjqnu<>uid://b43rhvnfi8ajj<>uid://cbfi80pixlp6l<>uid://c7unk0v2rqh48<>uid://3p6yfneudusq<>uid://b5fdwjnepa6b3<>uid://ckvryps0currj<>uid://b01bd6xfbfvld<>res://Player/gun_camera.gd
 player_damage.wav::AudioStreamWAV::4194883334607036645::1670312939::1670312940::1::::<><>::
 ::res://Player/Gun/::1671000385
 128299__xenonn__layered-gunshot-5.wav::AudioStreamWAV::1998178656913099484::1669881944::1669881944::1::::<><>::

@@ -87,7 +87,8 @@ func _physics_process(delta):
 func find_target():
 #	print("finding target...")
 #	await get_tree().create_timer(2).timeout
-	nav_agent.set_target_location(target_location.global_position)
+	if target_location.global_position.y < 4:
+		nav_agent.set_target_location(target_location.global_position)
 
 func stuck_check():
 	if vulnerable:

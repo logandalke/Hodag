@@ -12,8 +12,8 @@ res://Menu/equipment_menu.tscn::ab5af9cdb235f6cd3edfd178052f291e::1669881944::re
 res://Menu/good_ending.tscn::7aeea1bfc24717101c14dcb2d4adc13b::1670485186::res://.godot/exported/133200997/export-41c1b78269892b2726b8d3e3bfccd889-good_ending.scn
 res://Menu/loading_screen.tscn::f3b4dc49c50b3033cc579d5121e76e3e::1669881944::res://.godot/exported/133200997/export-baece05e582e012425319ec153c85ceb-loading_screen.scn
 res://Menu/maintheme.tres::ab2f139663e8c3bd629d08716435c5d9::1669881944::res://.godot/exported/133200997/export-055a86eedcf1cb05c36c29708000a916-maintheme.res
-res://Menu/main_menu.tres::1a85be77afdd8edeac41f87cad9a86db::1670980704::res://.godot/exported/133200997/export-a5215d2e54ae4d022876c2a0568601ed-main_menu.res
-res://Menu/main_menu.tscn::0e3b9efcda1db17a70cd20ef0d7322f4::1671000583::res://.godot/exported/133200997/export-7bcd1953aecf3a3c8cd06d947ed78dc8-main_menu.scn
+res://Menu/main_menu.tres::1a85be77afdd8edeac41f87cad9a86db::1672996901::res://.godot/exported/133200997/export-a5215d2e54ae4d022876c2a0568601ed-main_menu.res
+res://Menu/main_menu.tscn::a24a2cd7fe9dce3d54370e2d141ff651::1672997522::res://.godot/exported/133200997/export-7bcd1953aecf3a3c8cd06d947ed78dc8-main_menu.scn
 res://Menu/pause_menu.tscn::4fa93bba7159fb757822ba87ea82894b::1670485207::res://.godot/exported/133200997/export-dcb0153e81561e0887837adb9d807390-pause_menu.scn
 res://Menu/premise.tscn::fa6ac6cc580bf92ff29886fad64deda9::1669881944::res://.godot/exported/133200997/export-1553e47b55de4822e7ecc8088363cbcb-premise.scn
 res://Menu/screen_fade.tscn::303b41013e9ba2c7ace8c220bcff8adf::1669881944::res://.godot/exported/133200997/export-b80cda2b62f4359dfa849630ae34ba66-screen_fade.scn
@@ -23,12 +23,12 @@ res://Nav Mesh/new_navigation_mesh.tres::da9471a7a6f37266f1d667243f3e51b0::16698
 res://Player/Gun/bullet_hole.tscn::f425a6ca902a03a848fc475f0fabe399::1671000385::res://.godot/exported/133200997/export-05338aa098d7b2dd9d50f7adbac3865a-bullet_hole.scn
 res://Player/Gun/gun.tscn::ebbbb2f6b03d1c595daa8139a005ebf3::1670486149::res://.godot/exported/133200997/export-75f31e5fb78925efdf67831bcc2e4c0f-gun.scn
 res://Player/damaged.tres::7b9cdf1f4d6782d747ca456a93748716::1669881944::res://.godot/exported/133200997/export-6b923f9e25b60520d06a76e2591ea26e-damaged.res
-res://Player/player.tscn::fa4168b5db7f121ccc3d25de173525e0::1671571968::res://.godot/exported/133200997/export-d267b47f7e81a3258979164d56d0d9c2-player.scn
-res://Collectables/macguffin_shader.tres::5c461a2cce4a80f3d9a1ca41e85fada0::1671000170::res://.godot/exported/133200997/export-cd28468a318c10ccedee53504778c9a4-macguffin_shader.res
+res://Player/player.tscn::d292440ed5c493d981377f9e042f7d7e::1672997521::res://.godot/exported/133200997/export-d267b47f7e81a3258979164d56d0d9c2-player.scn
+res://Collectables/macguffin_shader.tres::5c461a2cce4a80f3d9a1ca41e85fada0::1672995815::res://.godot/exported/133200997/export-cd28468a318c10ccedee53504778c9a4-macguffin_shader.res
 res://Enviro Assets/Scenes/box.tscn::edc897d2f5d190082c5feb0d6ed850f4::1669881944::res://.godot/exported/133200997/export-a9541f65756d00617087e6060f53f23e-box.scn
 res://Enviro Assets/Scenes/brokenglass.tscn::114caa26d2f07bf89edeb6d8d59964df::1671000132::res://.godot/exported/133200997/export-b799fbe9956ff9da51419cc7595d0162-brokenglass.scn
 res://Enviro Assets/Scenes/deer.tscn::f05039103db41c77173031640c0bc115::1669881944::res://.godot/exported/133200997/export-89b87b410c1524b50f59fb8ef99ef5b2-deer.scn
-res://Enviro Assets/Scenes/EnviroFinal.tscn::ae69ed7878c92e4d17c467de620443da::1671000594::res://.godot/exported/133200997/export-56cc914fc4c7bfe2557a3c55255fc02c-EnviroFinal.scn
+res://Enviro Assets/Scenes/EnviroFinal.tscn::78ee3f3b94d00887bf2fccf4e4433279::1672997566::res://.godot/exported/133200997/export-56cc914fc4c7bfe2557a3c55255fc02c-EnviroFinal.scn
 res://Enviro Assets/Scenes/Environment.tscn::99a2f0e00401d6f4e77eebfbeeaf0420::1671000580::res://.godot/exported/133200997/export-d1c22edb7dbe4d3dffd9477aacb56bd2-Environment.scn
 res://Enviro Assets/Scenes/groundandrail.tscn::77f46edfc2bd01d5ef086148ed21f2b6::1669881944::res://.godot/exported/133200997/export-de5dd888b31af310aeb9a639cb094f9f-groundandrail.scn
 res://Enviro Assets/Scenes/hanginglight.tscn::26c9259f598594304c33e3cc70a95ca3::1669881944::res://.godot/exported/133200997/export-39684457ccb71a54bae7f919de530b11-hanginglight.scn

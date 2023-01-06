@@ -1,2 +1,8 @@
 res://Player/player.tscn
-res://Menu/premise.gd
+res://Collectables/macguffin_shader.tres
+res://Enviro Assets/Scenes/EnviroFinal.tscn
+res://Player/player.gd
+res://Hodag/hodag.gd
+res://Enviro Assets/Scripts/EnviroFinal.gd
+res://Menu/main_menu.tres
+res://Menu/main_menu.tscn
